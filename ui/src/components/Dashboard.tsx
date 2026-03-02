@@ -3,6 +3,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from ".
 import { Badge } from "./ui/badge";
 import { useState, useEffect } from "react";
 import { TrendingUp, BarChart3, Activity, Award, ArrowUpRight, ArrowDownRight } from "lucide-react";
+import { apiClient } from "@/lib/api";
 
 export function Dashboard() {
   const [kpis, setKpis] = useState([
@@ -19,13 +20,10 @@ export function Dashboard() {
 
   const fetchDashboardData = async () => {
     try {
-      const [statsResponse, backtestsResponse] = await Promise.all([
-        fetch('http://localhost:8000/api/dashboard/stats'),
-        fetch('http://localhost:8000/api/dashboard/recent-backtests')
+      const [stats, backtests] = await Promise.all([
+        apiClient.getDashboardStats() as any,
+        apiClient.getRecentBacktests() as any
       ]);
-
-      const stats = await statsResponse.json();
-      const backtests = await backtestsResponse.json();
 
       setKpis([
         { label: "Total Strategies", value: stats.total_strategies.toString(), change: "+2", positive: true, icon: BarChart3 },
