@@ -1,0 +1,70 @@
+INFO:     Started server process [43742]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:55690 - "GET /api/dashboard/stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55704 - "GET /api/dashboard/recent-backtests HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37976 - "OPTIONS /api/strategies HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37976 - "GET /api/strategies HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37976 - "GET /api/strategies HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37976 - "GET /api/strategies HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35826 - "OPTIONS /api/backtests HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35826 - "GET /api/backtests HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35826 - "OPTIONS /api/backtests/d79937bd-8097-494a-841d-100cd9e3d4d6 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35826 - "GET /api/backtests/d79937bd-8097-494a-841d-100cd9e3d4d6 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35826 - "OPTIONS /api/strategies HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35826 - "GET /api/strategies HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54126 - "GET /api/dashboard/stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54132 - "GET /api/dashboard/recent-backtests HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54132 - "GET /api/strategies HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49278 - "GET /api/dashboard/stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49280 - "GET /api/dashboard/recent-backtests HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49280 - "GET /api/strategies HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45298 - "GET /api/strategies HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39198 - "GET /api/strategies HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33936 - "OPTIONS /api/backtests/start HTTP/1.1" 200 OK
+/home/moew/Documents/BacktestingEngine/ui/backend.py:201: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.11/migration/
+  "config": config.dict(),
+/home/moew/Documents/BacktestingEngine/ui/backend.py:202: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "started_at": datetime.utcnow()
+INFO:     127.0.0.1:33936 - "POST /api/backtests/start HTTP/1.1" 200 OK
+/home/moew/Documents/BacktestingEngine/backtesting_engine/data/data_ingestion.py:167: FutureWarning: YF.download() has changed argument auto_adjust default to True
+  data = yf.download(ticker, start=start_date, end=end_date, interval=interval, progress=False)
+Fetching data for AAPL from Yahoo Finance (2023-01-01 to 2023-12-31, interval=1d)...
+Successfully loaded 250 rows for AAPL from Yahoo Finance
+INFO:     127.0.0.1:33936 - "OPTIONS /api/backtests/cff34f4d-22b1-4ef1-aa1c-498a7132ce56/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33952 - "GET /api/backtests HTTP/1.1" 200 OK
+/home/moew/Documents/BacktestingEngine/ui/backend.py:428: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  elapsed = (datetime.utcnow() - status["started_at"]).total_seconds()
+INFO:     127.0.0.1:33936 - "GET /api/backtests/cff34f4d-22b1-4ef1-aa1c-498a7132ce56/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33952 - "GET /api/backtests/d79937bd-8097-494a-841d-100cd9e3d4d6 HTTP/1.1" 200 OK
+/home/moew/Documents/BacktestingEngine/backtesting_engine/strategies/moving_average.py:51: FutureWarning: ChainedAssignmentError: behaviour will change in pandas 3.0!
+You are setting values through chained assignment. Currently this works in certain cases, but when using Copy-on-Write (which will become the default behaviour in pandas 3.0) this will never work to update the original DataFrame or Series, because the intermediate object on which we are setting values will behave as a copy.
+A typical example is when you are setting values in a column of a DataFrame, like:
+
+df["col"][row_indexer] = value
+
+Use `df.loc[row_indexer, "col"] = values` instead, to perform the assignment in a single step and ensure this keeps updating the original `df`.
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+
+  signals['signal'][self.long_window:] = np.where(
+/home/moew/Documents/BacktestingEngine/backtesting_engine/strategies/moving_average.py:51: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  signals['signal'][self.long_window:] = np.where(
+/home/moew/Documents/BacktestingEngine/ui/backend.py:379: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.11/migration/
+  "config": config.dict(),
+/home/moew/Documents/BacktestingEngine/ui/backend.py:382: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "completed_at": datetime.utcnow()
+/home/moew/Documents/BacktestingEngine/ui/backend.py:391: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "completed_at": datetime.utcnow().isoformat(),
+/home/moew/Documents/BacktestingEngine/ui/backend.py:392: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "duration": str(datetime.utcnow() - manager.running_backtests[backtest_id]["started_at"]),
+/home/moew/Documents/BacktestingEngine/ui/backend.py:393: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.11/migration/
+  "config": config.dict(),
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [43742]

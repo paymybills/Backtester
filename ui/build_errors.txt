@@ -1,0 +1,24 @@
+﻿src/components/Dashboard.tsx(41,7): error TS2304: Cannot find name 'setLoading'.
+src/components/EmergencyAlerts.tsx(7,54): error TS6133: 'Ambulance' is declared but its value is never read.
+src/components/OrganizerDashboard.tsx(5,10): error TS6133: 'BarChart' is declared but its value is never read.
+src/components/OrganizerDashboard.tsx(5,20): error TS6133: 'Bar' is declared but its value is never read.
+src/components/ParticipantPortal.tsx(4,18): error TS6133: 'Clock' is declared but its value is never read.
+src/components/ParticipantPortal.tsx(19,9): error TS6133: 'raceResults' is declared but its value is never read.
+src/components/ReportScreen.tsx(5,10): error TS6133: 'LineChart' is declared but its value is never read.
+src/components/ReportScreen.tsx(5,21): error TS6133: 'Line' is declared but its value is never read.
+src/components/ReportScreen.tsx(9,53): error TS6133: 'Calendar' is declared but its value is never read.
+src/components/ReportScreen.tsx(12,9): error TS6133: 'toast' is declared but its value is never read.
+src/components/StrategyConfiguration.tsx(7,1): error TS6192: All imports in import declaration are unused.
+src/components/StrategyConfiguration.tsx(13,80): error TS6133: 'Trash2' is declared but its value is never read.
+src/components/ui/carousel.tsx(6,8): error TS2307: Cannot find module 'embla-carousel-react@8.6.0' or its corresponding type declarations.
+src/components/ui/chart.tsx(4,36): error TS2307: Cannot find module 'recharts@2.15.2' or its corresponding type declarations.
+src/components/ui/chart.tsx(182,23): error TS7006: Parameter 'item' implicitly has an 'any' type.
+src/components/ui/chart.tsx(182,29): error TS7006: Parameter 'index' implicitly has an 'any' type.
+src/components/ui/chart.tsx(278,21): error TS7006: Parameter 'item' implicitly has an 'any' type.
+src/components/ui/command.tsx(4,45): error TS2307: Cannot find module 'cmdk@1.1.1' or its corresponding type declarations.
+src/components/ui/drawer.tsx(4,43): error TS2307: Cannot find module 'vaul@1.1.2' or its corresponding type declarations.
+src/components/ui/form.tsx(14,8): error TS2307: Cannot find module 'react-hook-form@7.55.0' or its corresponding type declarations.
+src/components/ui/input-otp.tsx(4,43): error TS2307: Cannot find module 'input-otp@1.4.2' or its corresponding type declarations.
+src/components/ui/input-otp.tsx(47,61): error TS2339: Property 'slots' does not exist on type '{}'.
+src/components/ui/resizable.tsx(5,37): error TS2307: Cannot find module 'react-resizable-panels@2.1.7' or its corresponding type declarations.
+src/components/ui/toaster.tsx(1,1): error TS6133: 'React' is declared but its value is never read.

@@ -1,0 +1,5 @@
+﻿
+> backtesting-engine-ui@0.1.0 build
+> tsc && vite build
+
+tsconfig.json(30,18): error TS6310: Referenced project 'C:/Users/aniro/Documents/Projects/BacktestingEngine/ui/tsconfig.node.json' may not disable emit.

@@ -1,0 +1,258 @@
+% Backtesting Engine: Architecture and Design Report
+\documentclass[11pt,a4paper]{article}
+
+% Basic packages
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb}
+\usepackage{listings}
+\usepackage{caption}
+
+\geometry{margin=1in}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  urlcolor=blue,
+  citecolor=blue
+}
+
+% Listing setup (for JSON, shell)
+\lstdefinestyle{code}{
+  basicstyle=\ttfamily\small,
+  breaklines=true,
+  showstringspaces=false,
+  frame=single,
+  framesep=6pt,
+  rulecolor=\color{black!20}
+}
+
+\title{Backtesting Engine\\Architecture, Modules, Purpose, and Novelty}
+\author{Project Documentation}
+\date{\today}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\bigskip
+
+\section*{Executive Summary (Abstract)}
+This project is a full-stack backtesting platform for designing, validating, and running trading strategies. It combines a modern web UI for strategy configuration and reporting with a Python back end that simulates trades with realistic assumptions (commission, slippage) and computes key performance metrics (returns, Sharpe, drawdowns, win rate). It supports background execution, live progress/status, and rich visualizations. The system is modular and extensible: new strategies, data sources, and reports can be plugged in without altering the core engine.
+
+\section{Explain Like I'm 5 (ELI5)}
+Imagine you have a plan for buying and selling things (a ``strategy''). Before you risk real money, you want to see how your plan would have worked in the past. This app lets you:
+\begin{itemize}[leftmargin=*]
+  \item Write down your plan (the rules).
+  \item Run it on pretend past prices.
+  \item See how much your pretend money would have grown or shrunk.
+  \item Look at helpful pictures (charts) that show the journey.
+\end{itemize}
+If the plan looks good, you can tweak it more. If not, you can try new ideas quickly.
+
+\section{Purpose and Goals}
+\begin{itemize}[leftmargin=*]
+  \item Provide a reliable environment to design and validate trading strategies.
+  \item Offer a fast feedback loop from configuration to results and visual insights.
+  \item Encourage reproducible research with notebooks and an API/UI suitable for productionization.
+  \item Reduce friction when adding new strategies, metrics, or data sources.
+\end{itemize}
+
+\section{System Overview}
+\subsection{High-Level Architecture}
+The platform has two main layers and a shared research surface:
+\begin{enumerate}[leftmargin=*]
+  \item \textbf{Frontend (React/Vite)}: A polished UI (derived from Figma) for configuring strategies, launching backtests, and browsing results.
+  \item \textbf{Backend (FastAPI)}: REST API that orchestrates data ingestion, simulation, and reporting, with background tasks for long-running backtests.
+  \item \textbf{Notebook (Jupyter)}: Research and exploration environment with end-to-end examples and visualizations.
+\end{enumerate}
+
+\subsection{Core Concepts}
+\begin{description}[leftmargin=*,style=nextline]
+  \item[Strategy] Encapsulates entry/exit logic (e.g., Moving Average Crossover, RSI Strategy). Strategies are pluggable.
+  \item[Engine] Runs simulations over historical data with commissions, slippage, and position sizing.
+  \item[Portfolio/Trades] Tracks cash, holdings, P\&L, and trade ledger.
+  \item[Metrics] Computes returns, Sharpe/Sortino, drawdowns, win rate, and more.
+  \item[Reporting] Produces plots and summaries for decision-making.
+\end{description}
+
+\section{Modules}
+\subsection{Frontend (React + Vite)}
+\textbf{Highlights:}
+\begin{itemize}[leftmargin=*]
+  \item Strategy configuration form: name, description, asset class, timeframe, entry/exit signals, risk parameters, optional custom code.
+  \item Actions: Save draft, validate client-side, submit to backend via \texttt{/api/strategies}.
+  \item Backtest execution UI: start/pause/stop and live status via polling endpoints.
+  \item Reporting dashboard with KPIs and charts (Recharts).
+\end{itemize}
+\textbf{Key libraries:} React, Vite (SWC), Radix UI, shadcn/ui patterns, Recharts, Tailwind utilities.
+
+\subsection{Backend (FastAPI)}
+\textbf{Highlights:}
+\begin{itemize}[leftmargin=*]
+  \item CORS-enabled REST API.
+  \item Pydantic models for validation (strategy and backtest configs).
+  \item Background tasks for long-running simulations with progress tracking.
+  \item Results post-processing to JSON-friendly structures (portfolio and trades).
+\end{itemize}
+\textbf{Representative Endpoints:}
+\begin{lstlisting}[style=code]
+GET  /api/dashboard/stats
+GET  /api/dashboard/recent-backtests
+GET  /api/strategies
+POST /api/strategies
+POST /api/backtests/start
+GET  /api/backtests/{id}/status
+GET  /api/backtests/{id}/results
+POST /api/backtests/{id}/pause
+POST /api/backtests/{id}/stop
+GET  /api/backtests
+\end{lstlisting}
+
+\subsection{Backtesting Engine (Python)}
+\textbf{Key components:}
+\begin{itemize}[leftmargin=*]
+  \item \textbf{DataIngestion}: loads or synthesizes price series for testing.
+  \item \textbf{Strategies}: \texttt{MovingAverageCrossover}, \texttt{RSIStrategy}, plus a hook for custom/user-defined logic.
+  \item \textbf{BacktestingEngine}: core simulation loop, order handling, portfolio updates, commission and slippage modeling.
+  \item \textbf{Reporting}: metrics computation and visualizations.
+\end{itemize}
+
+\subsection{Research Notebooks}
+A Jupyter notebook (\texttt{backtest.ipynb}) demonstrates end-to-end usage, including data generation, running multiple strategies, and producing plots (e.g., equity curves, returns distribution). ``Fixed'' visualization helpers were added to ensure functions are defined before use and avoid missing-dependency pitfalls.
+
+\section{Data Flow}
+\begin{enumerate}[leftmargin=*]
+  \item User configures a strategy in the UI and submits to the backend.
+  \item Backend validates/constructs the strategy instance and initializes the engine.
+  \item Data is ingested (synthetic by default; pluggable for real sources later).
+  \item Engine runs the backtest, generating a portfolio time series and trade list.
+  \item Metrics and visualization-friendly data are computed and returned via API.
+  \item UI renders KPIs, charts, and trade tables.
+\end{enumerate}
+
+\section{Strategy Definition \\ \& Validation}
+\subsection{Contract}
+\begin{itemize}[leftmargin=*]
+  \item \textbf{Inputs}: price series (OHLCV), configuration (signals, risk params).
+  \item \textbf{Outputs}: sequence of orders/trades, portfolio equity curve, metrics.
+  \item \textbf{Error modes}: invalid parameters, unavailable data, divide-by-zero in metrics, insufficient history for indicators.
+  \item \textbf{Success criteria}: simulation completes, metrics computed, no unhandled exceptions, results serialized to JSON.
+\end{itemize}
+
+\subsection{Validation}
+Client-side checks ensure required fields (e.g., name, entry signal) are present. Backend Pydantic models enforce types and defaults. For custom code strategies, sandboxing and static checks are recommended before execution (future enhancement).
+
+\section{Technology Stack}
+\begin{description}[leftmargin=*,style=nextline]
+  \item[Frontend] React, Vite, TypeScript, Radix UI components, Recharts.
+  \item[Backend] FastAPI, Uvicorn, Pydantic, BackgroundTasks.
+  \item[Analytics] Pandas, NumPy, Matplotlib; optional SciPy for advanced stats.
+  \item[Dev/Tooling] Node/npm, ESLint, SWC, Jupyter.
+  \item[Deployment] Local (uvicorn) and cloud-ready (Vercel-/Railway-style separation).
+\end{description}
+
+\section{Novelty and Uniqueness}
+\begin{itemize}[leftmargin=*]
+  \item \textbf{Figma-to-UI parity}: professional UX that mirrors design specs.
+  \item \textbf{Strategy-first, pluggable design}: new strategies and data sources can be added with minimal coupling.
+  \item \textbf{Realistic simulation details}: commission and slippage modeling built-in.
+  \item \textbf{Live progress and results}: background execution with status endpoints allows smooth UX.
+  \item \textbf{Dual-mode workflow}: research-friendly notebook plus production-ready API/UI.
+  \item \textbf{Self-contained demo path}: synthetic data lets users evaluate quickly without API keys.
+\end{itemize}
+
+\section{How to Run (Local)}
+\subsection*{Backend (FastAPI)}
+\begin{lstlisting}[style=code]
+# From the ui directory (contains backend.py)
+source ../.venv/bin/activate
+uvicorn backend:app --reload --host 0.0.0.0 --port 8000
+\end{lstlisting}
+
+\subsection*{Frontend (React/Vite)}
+\begin{lstlisting}[style=code]
+cd ui
+npm install
+npm run dev
+# open http://localhost:3000
+\end{lstlisting}
+
+\subsection*{Notebook}
+Open \texttt{backtest.ipynb} in VS Code or Jupyter and execute cells top-to-bottom. If a plot function errors due to missing imports, re-run the cell that defines the helper functions (e.g., equity curve/returns distribution).
+
+\section{Limitations and Future Work}
+\begin{itemize}[leftmargin=*]
+  \item Expand data connectors (e.g., yFinance, database loaders, premium APIs).
+  \item Harden validation and sandboxing for user-provided strategy code.
+  \item Add more KPIs (alpha, beta, turnover, exposure), and multi-asset portfolios.
+  \item Improve performance on large datasets (vectorization, caching, batching).
+  \item Authentication, multi-user storage of strategies and results.
+\end{itemize}
+
+\appendix
+\section{API Shapes (Representative)}
+\subsection*{Start Backtest}
+\begin{lstlisting}[style=code]
+POST /api/backtests/start
+{
+  "strategy_name": "ma_crossover",
+  "start_date": "2024-01-01",
+  "end_date": "2024-12-31",
+  "initial_capital": 100000.0,
+  "commission": 0.001,
+  "slippage": 0.0005,
+  "data_source": "synthetic"
+}
+\end{lstlisting}
+
+\subsection*{Backtest Status}
+\begin{lstlisting}[style=code]
+GET /api/backtests/{id}/status
+{
+  "id": "...",
+  "status": "running|completed|failed|paused",
+  "progress": 72.5,
+  "current_step": "Running simulation...",
+  "estimated_time_remaining": "2m 31s"
+}
+\end{lstlisting}
+
+\subsection*{Backtest Results}
+\begin{lstlisting}[style=code]
+GET /api/backtests/{id}/results
+{
+  "backtest_id": "...",
+  "strategy_name": "MovingAverageCrossover",
+  "metrics": {
+    "total_return": 18.2,
+    "annualized_return": 12.5,
+    "sharpe_ratio": 1.34,
+    "sortino_ratio": 1.90,
+    "max_drawdown": -8.7,
+    "win_rate": 53.2,
+    "total_trades": 124
+  },
+  "portfolio_data": [ {"date": "2024-01-02", "portfolio_value": 100523.4, ...}, ... ],
+  "trades": [ {"id": "T001", "date": "2024-02-10", "type": "BUY", ...}, ... ],
+  "completed_at": "2024-01-15T12:34:56Z"
+}
+\end{lstlisting}
+
+\section*{Compilation}
+You can compile this document with any LaTeX engine. Two common options:
+\begin{lstlisting}[style=code]
+# With latexmk (recommended)
+latexmk -pdf docs/project-report.tex
+
+# Or with pdflatex (run twice for ToC)
+pdflatex docs/project-report.tex
+pdflatex docs/project-report.tex
+\end{lstlisting}
+
+\end{document}

@@ -1,0 +1,1405 @@
+% Backtesting Engine: Complete Educational Guide
+\documentclass[11pt,a4paper]{article}
+
+% Packages
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb}
+\usepackage{listings}
+\usepackage{caption}
+\usepackage{tcolorbox}
+\usepackage{multicol}
+\usepackage{fancyhdr}
+
+\geometry{margin=1in}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  urlcolor=blue,
+  citecolor=blue
+}
+
+% Custom boxes for key concepts
+\newtcolorbox{keyterm}[1]{
+  colback=blue!5!white,
+  colframe=blue!75!black,
+  fonttitle=\bfseries,
+  title=#1
+}
+
+\newtcolorbox{example}[1]{
+  colback=green!5!white,
+  colframe=green!75!black,
+  fonttitle=\bfseries,
+  title=#1
+}
+
+\newtcolorbox{warning}{
+  colback=red!5!white,
+  colframe=red!75!black,
+  fonttitle=\bfseries,
+  title=Important Note
+}
+
+\newtcolorbox{flowstep}[1]{
+  colback=yellow!5!white,
+  colframe=orange!75!black,
+  fonttitle=\bfseries,
+  title=Step #1
+}
+
+% Code listing style
+\lstdefinestyle{pythoncode}{
+  language=Python,
+  basicstyle=\ttfamily\small,
+  keywordstyle=\color{blue}\bfseries,
+  commentstyle=\color{gray}\itshape,
+  stringstyle=\color{red},
+  breaklines=true,
+  showstringspaces=false,
+  frame=single,
+  numbers=left,
+  numberstyle=\tiny\color{gray},
+  rulecolor=\color{black!20}
+}
+
+\lstdefinestyle{jsoncode}{
+  basicstyle=\ttfamily\small,
+  breaklines=true,
+  showstringspaces=false,
+  frame=single,
+  numbers=left,
+  numberstyle=\tiny\color{gray},
+  rulecolor=\color{black!20}
+}
+
+\lstdefinestyle{shellcode}{
+  language=bash,
+  basicstyle=\ttfamily\small,
+  breaklines=true,
+  showstringspaces=false,
+  frame=single,
+  rulecolor=\color{black!20}
+}
+
+\title{%
+  \textbf{Backtesting Engine}\\
+  \large Complete Study Guide with Key Concepts, Architecture, and Flow
+}
+\author{Educational Documentation}
+\date{\today}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\clearpage
+
+%==============================================================================
+\section{Introduction: What Is This Project?}
+%==============================================================================
+
+This project is a \textbf{backtesting platform} for trading strategies. Before we dive deep, let's understand what that means.
+
+\begin{keyterm}{Backtesting}
+\textbf{Backtesting} is the process of testing a trading strategy on historical data to see how it would have performed. Think of it as a time machine for your investment ideas—you can see what would have happened if you had used your strategy in the past.
+\end{keyterm}
+
+\subsection{Why Do We Need This?}
+
+Imagine you have an idea: "I'll buy a stock when its price crosses above its 50-day average and sell when it crosses below." Before risking real money, you want to know:
+\begin{itemize}
+  \item Would this strategy have made money in the past?
+  \item How much would I have gained or lost?
+  \item How risky is this strategy?
+  \item When does it perform well, and when does it fail?
+\end{itemize}
+
+This project provides:
+\begin{enumerate}
+  \item A \textbf{framework} to define strategies
+  \item An \textbf{engine} to simulate trading
+  \item A \textbf{web interface} to configure and run tests
+  \item \textbf{Reports and visualizations} to understand results
+\end{enumerate}
+
+%==============================================================================
+\section{Key Terms and Concepts}
+%==============================================================================
+
+Let's define all the important terms you'll encounter in this project.
+
+\subsection{Core Trading Concepts}
+
+\begin{keyterm}{Strategy}
+A \textbf{strategy} is a set of rules that determines when to buy or sell an asset. For example:
+\begin{itemize}
+  \item Buy when RSI < 30 (oversold)
+  \item Sell when RSI > 70 (overbought)
+\end{itemize}
+In code, a strategy is a Python class with methods like \texttt{generate\_signals(data)}.
+\end{keyterm}
+
+\begin{keyterm}{Portfolio}
+A \textbf{portfolio} tracks your current holdings and cash over time. It includes:
+\begin{itemize}
+  \item Current cash balance
+  \item Shares held
+  \item Total portfolio value (cash + holdings)
+  \item Historical performance
+\end{itemize}
+\end{keyterm}
+
+\begin{keyterm}{Trade}
+A \textbf{trade} is a single buy or sell transaction. Each trade has:
+\begin{itemize}
+  \item Date/time
+  \item Type (BUY or SELL)
+  \item Price
+  \item Number of shares
+  \item Commission paid
+\end{itemize}
+\end{keyterm}
+
+\begin{keyterm}{Signal}
+A \textbf{signal} is an indicator from your strategy. Common signals:
+\begin{itemize}
+  \item BUY: Enter a position
+  \item SELL: Exit a position
+  \item HOLD: Do nothing
+\end{itemize}
+\end{keyterm}
+
+\subsection{Performance Metrics}
+
+\begin{keyterm}{Total Return}
+The percentage gain or loss over the entire backtest period.
+\[
+\text{Total Return} = \frac{\text{Final Value} - \text{Initial Capital}}{\text{Initial Capital}} \times 100\%
+\]
+\textbf{Example:} Start with \$100,000, end with \$118,200 → 18.2\% return
+\end{keyterm}
+
+\begin{keyterm}{Sharpe Ratio}
+Measures risk-adjusted returns. Higher is better.
+\[
+\text{Sharpe Ratio} = \frac{\text{Average Return} - \text{Risk-Free Rate}}{\text{Standard Deviation of Returns}}
+\]
+\textbf{Interpretation:}
+\begin{itemize}
+  \item < 1: Poor
+  \item 1-2: Good
+  \item 2-3: Very good
+  \item > 3: Excellent
+\end{itemize}
+\end{keyterm}
+
+\begin{keyterm}{Maximum Drawdown}   
+The largest peak-to-trough decline in portfolio value. Shows the worst loss you would have experienced.
+\[
+\text{Drawdown} = \frac{\text{Trough Value} - \text{Peak Value}}{\text{Peak Value}} \times 100\%
+\]
+\textbf{Example:} Your portfolio peaked at \$120,000 then dropped to \$109,600 → -8.7\% drawdown
+\end{keyterm}
+
+\begin{keyterm}{Win Rate}
+The percentage of profitable trades.
+\[
+\text{Win Rate} = \frac{\text{Number of Winning Trades}}{\text{Total Trades}} \times 100\%
+\]
+\textbf{Example:} 66 wins out of 124 trades → 53.2\% win rate
+\end{keyterm}
+
+\begin{keyterm}{Sortino Ratio}
+Similar to Sharpe but only penalizes downside volatility (losses). Better for strategies with asymmetric returns.
+\end{keyterm}
+
+\subsection{Trading Realism}
+
+\begin{keyterm}{Commission}
+The fee you pay to your broker for each trade. Typically 0.1\% to 0.5\% per trade.
+\[
+\text{Commission} = \text{Trade Value} \times \text{Commission Rate}
+\]
+\textbf{Example:} Buy \$10,000 worth of stock at 0.1\% commission → pay \$10
+\end{keyterm}
+
+\begin{keyterm}{Slippage}
+The difference between the expected price and the actual execution price. Market orders often fill at slightly worse prices.
+\[
+\text{Execution Price} = \text{Signal Price} \times (1 + \text{Slippage Factor})
+\]
+\textbf{Example:} Expected to buy at \$100, but slippage of 0.05\% means you pay \$100.05
+\end{keyterm}
+
+\begin{keyterm}{Position Sizing}
+How much of your portfolio to allocate to each trade. Common approaches:
+\begin{itemize}
+  \item Fixed percentage (e.g., 10\% per trade)
+  \item Equal dollar amount
+  \item Risk-based (e.g., 2\% risk per trade)
+\end{itemize}
+\end{keyterm}
+
+\subsection{Technical Analysis}
+
+\begin{keyterm}{Moving Average (MA)}
+The average price over a specified number of periods. Smooths out price fluctuations.
+\[
+MA_n = \frac{1}{n}\sum_{i=0}^{n-1} P_{t-i}
+\]
+\textbf{Example:} 50-day MA is the average closing price over the last 50 days
+\end{keyterm}
+
+\begin{keyterm}{Moving Average Crossover}
+A strategy where:
+\begin{itemize}
+  \item BUY when short-term MA crosses above long-term MA (golden cross)
+  \item SELL when short-term MA crosses below long-term MA (death cross)
+\end{itemize}
+\end{keyterm}
+
+\begin{keyterm}{RSI (Relative Strength Index)}
+Momentum oscillator ranging from 0 to 100. Measures speed and magnitude of price changes.
+\begin{itemize}
+  \item RSI < 30: Oversold (potential buy)
+  \item RSI > 70: Overbought (potential sell)
+\end{itemize}
+\end{keyterm}
+
+%==============================================================================
+\section{Project Architecture}
+%==============================================================================
+
+The project consists of three main components:
+
+\subsection{System Components Diagram}
+
+\begin{verbatim}
+┌─────────────────────────────────────────────────────────────┐
+│                      USER INTERFACE                          │
+│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐      │
+│  │  Dashboard   │  │  Strategy    │  │   Results    │      │
+│  │    Screen    │  │Configuration │  │    Screen    │      │
+│  └──────────────┘  └──────────────┘  └──────────────┘      │
+│         React + Vite + TypeScript                           │
+└─────────────────────────────────────────────────────────────┘
+                           ↕ HTTP/JSON
+┌─────────────────────────────────────────────────────────────┐
+│                     BACKEND API                              │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │           FastAPI REST Endpoints                      │  │
+│  │  /api/strategies, /api/backtests, etc.              │  │
+│  └──────────────────────────────────────────────────────┘  │
+│         FastAPI + Pydantic + BackgroundTasks                │
+└─────────────────────────────────────────────────────────────┘
+                           ↕ Python imports
+┌─────────────────────────────────────────────────────────────┐
+│                  BACKTESTING ENGINE                          │
+│  ┌────────────┐  ┌────────────┐  ┌────────────┐           │
+│  │    Data    │  │ Strategies │  │   Engine   │           │
+│  │ Ingestion  │  │  (MA, RSI) │  │ Simulation │           │
+│  └────────────┘  └────────────┘  └────────────┘           │
+│  ┌────────────┐  ┌────────────┐                            │
+│  │  Metrics   │  │ Reporting/ │                            │
+│  │Calculator  │  │    Plots   │                            │
+│  └────────────┘  └────────────┘                            │
+│         Pandas + NumPy + Matplotlib                         │
+└─────────────────────────────────────────────────────────────┘
+\end{verbatim}
+
+\subsection{Component Details}
+
+\subsubsection{Frontend (React + Vite)}
+
+\textbf{Purpose:} Provides a modern web interface for users to interact with the system.
+
+\textbf{Key files:}
+\begin{itemize}
+  \item \texttt{src/components/Dashboard.tsx}: Shows KPIs and recent backtests
+  \item \texttt{src/components/StrategyConfiguration.tsx}: Form to define strategies
+  \item \texttt{src/components/BacktestExecution.tsx}: Start/monitor backtests
+  \item \texttt{src/components/ReportScreen.tsx}: View results with charts
+  \item \texttt{src/lib/api.ts}: API client for backend communication
+\end{itemize}
+
+\textbf{Technologies:}
+\begin{itemize}
+  \item React: UI framework
+  \item Vite: Fast build tool
+  \item TypeScript: Type-safe JavaScript
+  \item Radix UI: Accessible component primitives
+  \item shadcn/ui: Pre-built component patterns
+  \item Recharts: Charting library
+  \item Tailwind CSS: Utility-first styling
+\end{itemize}
+
+\subsubsection{Backend (FastAPI)}
+
+\textbf{Purpose:} REST API that orchestrates backtests and serves results.
+
+\textbf{Key file:} \texttt{ui/backend.py}
+
+\textbf{Main responsibilities:}
+\begin{enumerate}
+  \item Accept strategy configurations
+  \item Validate input data
+  \item Run backtests in background tasks
+  \item Track progress and status
+  \item Serialize results to JSON
+  \item Serve data to frontend
+\end{enumerate}
+
+\textbf{Technologies:}
+\begin{itemize}
+  \item FastAPI: Modern Python web framework
+  \item Pydantic: Data validation
+  \item Uvicorn: ASGI server
+  \item BackgroundTasks: Async task execution
+  \item CORS middleware: Cross-origin requests
+\end{itemize}
+
+\subsubsection{Backtesting Engine (Python)}
+
+\textbf{Purpose:} Core logic for simulating trading strategies.
+
+\textbf{Key modules:}
+\begin{itemize}
+  \item \texttt{backtesting\_engine/data/ingestion.py}: Load/generate price data
+  \item \texttt{backtesting\_engine/strategies/}: Strategy implementations
+  \item \texttt{backtesting\_engine/core/engine.py}: Main simulation engine
+  \item \texttt{backtesting\_engine/analytics/metrics.py}: Performance calculations
+  \item \texttt{backtesting\_engine/visualization/reporting.py}: Charts and reports
+\end{itemize}
+
+\textbf{Technologies:}
+\begin{itemize}
+  \item Pandas: Data manipulation
+  \item NumPy: Numerical computations
+  \item Matplotlib: Visualization
+\end{itemize}
+
+\subsubsection{Research Notebook}
+
+\textbf{Purpose:} Interactive exploration and development.
+
+\textbf{Key file:} \texttt{backtest.ipynb}
+
+\textbf{Use cases:}
+\begin{itemize}
+  \item Prototype new strategies
+  \item Analyze results in detail
+  \item Create custom visualizations
+  \item Document experiments
+\end{itemize}
+
+%==============================================================================
+\section{Complete Project Flow}
+%==============================================================================
+
+Let's walk through the entire flow from strategy creation to results analysis.
+
+\subsection{Flow Overview}
+
+\begin{verbatim}
+1. User defines strategy → 2. Frontend validates → 3. API receives
+        ↓                            ↓                    ↓
+4. Backend creates strategy instance ← ← ← ← ← ← ← ← ← ← ┘
+        ↓
+5. Load historical data
+        ↓
+6. Initialize portfolio (cash + holdings)
+        ↓
+7. FOR EACH trading day:
+    a. Calculate indicators (MA, RSI, etc.)
+    b. Generate signal (BUY/SELL/HOLD)
+    c. Execute trades (with commission/slippage)
+    d. Update portfolio
+        ↓
+8. Calculate performance metrics
+        ↓
+9. Generate visualizations
+        ↓
+10. Serialize results to JSON
+        ↓
+11. Frontend displays results
+\end{verbatim}
+
+\subsection{Detailed Flow Steps}
+
+\begin{flowstep}{1: User Defines Strategy}
+User fills out the strategy configuration form:
+\begin{itemize}
+  \item \textbf{Name:} "My MA Crossover v1"
+  \item \textbf{Description:} "50/200 MA crossover on daily data"
+  \item \textbf{Asset Class:} Stocks
+  \item \textbf{Timeframe:} 1 Day
+  \item \textbf{Entry Signal:} MA Crossover
+  \item \textbf{Exit Signal:} MA Crossover (reverse)
+  \item \textbf{Stop Loss:} 5\%
+  \item \textbf{Take Profit:} 10\%
+  \item \textbf{Position Size:} 10\% of portfolio
+\end{itemize}
+\end{flowstep}
+
+\begin{flowstep}{2: Frontend Validation}
+Client-side checks before submitting:
+\begin{lstlisting}[style=pythoncode]
+if (!formData.name.trim()) {
+  toast({ title: "Error", 
+          description: "Strategy name required" });
+  return;
+}
+if (!formData.entry_signal) {
+  toast({ title: "Error", 
+          description: "Entry signal required" });
+  return;
+}
+\end{lstlisting}
+\end{flowstep}
+
+\begin{flowstep}{3: API Request}
+Frontend sends POST request to backend:
+\begin{lstlisting}[style=jsoncode]
+POST /api/strategies
+{
+  "name": "My MA Crossover v1",
+  "description": "50/200 MA crossover on daily data",
+  "asset_class": "stocks",
+  "timeframe": "1d",
+  "entry_signal": "ma-crossover",
+  "exit_signal": "ma-crossover",
+  "stop_loss": 5.0,
+  "take_profit": 10.0,
+  "position_size": 10.0,
+  "custom_code": null
+}
+\end{lstlisting}
+\end{flowstep}
+
+\begin{flowstep}{4: Backend Creates Strategy}
+Backend validates and instantiates strategy:
+\begin{lstlisting}[style=pythoncode]
+@app.post("/api/strategies")
+async def create_strategy(strategy: StrategyConfig):
+    engine = manager.get_engine()
+    
+    if strategy.entry_signal == "ma-crossover":
+        new_strategy = MovingAverageCrossover(
+            short_window=50, 
+            long_window=200
+        )
+    elif strategy.entry_signal == "rsi-oversold":
+        new_strategy = RSIStrategy(
+            period=14, 
+            oversold=30, 
+            overbought=70
+        )
+    
+    engine.add_strategy(new_strategy)
+    return {"message": "Strategy created successfully"}
+\end{lstlisting}
+\end{flowstep}
+
+\begin{flowstep}{5: Load Historical Data}
+Data ingestion module loads or generates price data:
+\begin{lstlisting}[style=pythoncode]
+data_ingestion = DataIngestion()
+data = data_ingestion.generate_sample_data(
+    start_date="2024-01-01",
+    end_date="2024-12-31"
+)
+# Returns DataFrame with columns:
+# Date, Open, High, Low, Close, Volume
+\end{lstlisting}
+\end{flowstep}
+
+\begin{flowstep}{6: Initialize Portfolio}
+Engine sets up initial portfolio state:
+\begin{lstlisting}[style=pythoncode]
+self.initial_capital = 100000.0
+self.cash = 100000.0
+self.holdings = 0
+self.portfolio_value = 100000.0
+self.trades = []
+self.portfolio_history = []
+\end{lstlisting}
+\end{flowstep}
+
+\begin{flowstep}{7: Main Simulation Loop}
+For each day in the dataset:
+
+\textbf{Step 7a: Calculate Indicators}
+\begin{lstlisting}[style=pythoncode]
+# Moving Average Strategy
+data['MA_short'] = data['Close'].rolling(
+    window=short_window
+).mean()
+data['MA_long'] = data['Close'].rolling(
+    window=long_window
+).mean()
+\end{lstlisting}
+
+\textbf{Step 7b: Generate Signals}
+\begin{lstlisting}[style=pythoncode]
+def generate_signals(self, data):
+    signals = pd.DataFrame(index=data.index)
+    signals['signal'] = 0
+    
+    # Buy when short MA crosses above long MA
+    signals['signal'] = np.where(
+        data['MA_short'] > data['MA_long'], 1, 0
+    )
+    
+    # Generate trading orders
+    signals['positions'] = signals['signal'].diff()
+    return signals
+\end{lstlisting}
+
+\textbf{Step 7c: Execute Trades}
+\begin{lstlisting}[style=pythoncode]
+if signal == 1:  # BUY
+    # Calculate position size
+    position_value = self.cash * position_size
+    shares = position_value / execution_price
+    
+    # Apply slippage
+    execution_price *= (1 + slippage_factor)
+    
+    # Calculate commission
+    commission = position_value * commission_rate
+    
+    # Update portfolio
+    self.cash -= (position_value + commission)
+    self.holdings += shares
+    
+    # Record trade
+    self.trades.append({
+        'date': current_date,
+        'type': 'BUY',
+        'price': execution_price,
+        'shares': shares,
+        'commission': commission
+    })
+\end{lstlisting}
+
+\textbf{Step 7d: Update Portfolio}
+\begin{lstlisting}[style=pythoncode]
+# Calculate current portfolio value
+holdings_value = self.holdings * current_price
+portfolio_value = self.cash + holdings_value
+
+# Record in history
+self.portfolio_history.append({
+    'date': current_date,
+    'cash': self.cash,
+    'holdings': self.holdings,
+    'holdings_value': holdings_value,
+    'total_value': portfolio_value
+})
+\end{lstlisting}
+\end{flowstep}
+
+\begin{flowstep}{8: Calculate Metrics}
+After simulation completes, calculate performance:
+\begin{lstlisting}[style=pythoncode]
+# Total Return
+total_return = (
+    (final_value - initial_capital) / initial_capital
+) * 100
+
+# Sharpe Ratio
+returns = portfolio['daily_return']
+sharpe = (
+    returns.mean() / returns.std()
+) * np.sqrt(252)  # Annualized
+
+# Maximum Drawdown
+cumulative = (1 + returns).cumprod()
+peak = cumulative.expanding(min_periods=1).max()
+drawdown = (cumulative - peak) / peak
+max_drawdown = drawdown.min() * 100
+
+# Win Rate
+winning_trades = sum(1 for t in trades 
+                     if t['profit'] > 0)
+win_rate = (winning_trades / len(trades)) * 100
+\end{lstlisting}
+\end{flowstep}
+
+\begin{flowstep}{9: Generate Visualizations}
+Create charts for analysis:
+\begin{lstlisting}[style=pythoncode]
+# Equity curve
+plt.plot(portfolio['date'], 
+         portfolio['total_value'])
+plt.title('Portfolio Equity Curve')
+plt.xlabel('Date')
+plt.ylabel('Portfolio Value ($)')
+
+# Returns distribution
+plt.hist(portfolio['daily_return'], bins=50)
+plt.title('Daily Returns Distribution')
+\end{lstlisting}
+\end{flowstep}
+
+\begin{flowstep}{10: Serialize Results}
+Convert results to JSON for API response:
+\begin{lstlisting}[style=pythoncode]
+results = {
+    "backtest_id": backtest_id,
+    "strategy_name": strategy_name,
+    "metrics": {
+        "total_return": float(total_return),
+        "sharpe_ratio": float(sharpe_ratio),
+        "max_drawdown": float(max_drawdown),
+        "win_rate": float(win_rate)
+    },
+    "portfolio_data": [
+        {
+            "date": row['date'].strftime("%Y-%m-%d"),
+            "portfolio_value": float(row['total_value'])
+        }
+        for _, row in portfolio.iterrows()
+    ],
+    "trades": [/* ... */]
+}
+\end{lstlisting}
+\end{flowstep}
+
+\begin{flowstep}{11: Display Results}
+Frontend fetches and displays:
+\begin{lstlisting}[style=pythoncode]
+const results = await apiClient.getBacktestResults(
+    backtestId
+);
+
+// Render KPI cards
+<div>Total Return: {results.metrics.total_return}%</div>
+<div>Sharpe Ratio: {results.metrics.sharpe_ratio}</div>
+
+// Render chart
+<LineChart data={results.portfolio_data}>
+  <Line dataKey="portfolio_value" />
+</LineChart>
+\end{lstlisting}
+\end{flowstep}
+
+%==============================================================================
+\section{Code Structure Deep Dive}
+%==============================================================================
+
+\subsection{Module Organization}
+
+\begin{verbatim}
+BacktestingEngine/
+├── backtesting_engine/         # Core engine
+│   ├── __init__.py
+│   ├── data/
+│   │   ├── __init__.py
+│   │   └── ingestion.py        # Data loading
+│   ├── strategies/
+│   │   ├── __init__.py
+│   │   ├── base.py             # Base strategy class
+│   │   ├── moving_average.py   # MA strategy
+│   │   └── rsi.py              # RSI strategy
+│   ├── core/
+│   │   ├── __init__.py
+│   │   └── engine.py           # Main engine
+│   ├── analytics/
+│   │   ├── __init__.py
+│   │   └── metrics.py          # Performance metrics
+│   └── visualization/
+│       ├── __init__.py
+│       └── reporting.py        # Charts & reports
+├── ui/                         # Web interface
+│   ├── src/
+│   │   ├── components/         # React components
+│   │   ├── lib/                # Utilities & API
+│   │   └── main.tsx            # Entry point
+│   ├── backend.py              # FastAPI server
+│   ├── package.json
+│   └── vite.config.ts
+├── tests/                      # Unit tests
+├── docs/                       # Documentation
+├── backtest.ipynb              # Jupyter notebook
+└── README.md
+\end{verbatim}
+
+\subsection{Key Classes and Their Roles}
+
+\subsubsection{DataIngestion}
+
+\textbf{Purpose:} Load or generate price data for backtesting.
+
+\textbf{Methods:}
+\begin{lstlisting}[style=pythoncode]
+class DataIngestion:
+    def load_from_csv(self, filepath):
+        """Load data from CSV file"""
+        
+    def generate_sample_data(self, start_date, end_date):
+        """Generate synthetic OHLCV data"""
+        
+    def fetch_from_api(self, symbol, start, end):
+        """Fetch from external API (future)"""
+\end{lstlisting}
+
+\subsubsection{Strategy (Base Class)}
+
+\textbf{Purpose:} Abstract base for all strategies.
+
+\textbf{Interface:}
+\begin{lstlisting}[style=pythoncode]
+class Strategy(ABC):
+    @abstractmethod
+    def generate_signals(self, data):
+        """
+        Generate trading signals from data
+        Returns: DataFrame with 'signal' column
+        """
+        pass
+    
+    @abstractmethod
+    def calculate_indicators(self, data):
+        """
+        Add technical indicators to data
+        """
+        pass
+\end{lstlisting}
+
+\subsubsection{MovingAverageCrossover}
+
+\textbf{Purpose:} Implements MA crossover strategy.
+
+\textbf{Parameters:}
+\begin{itemize}
+  \item \texttt{short\_window}: Fast MA period (e.g., 50)
+  \item \texttt{long\_window}: Slow MA period (e.g., 200)
+\end{itemize}
+
+\textbf{Logic:}
+\begin{lstlisting}[style=pythoncode]
+class MovingAverageCrossover(Strategy):
+    def __init__(self, short_window=50, long_window=200):
+        self.short_window = short_window
+        self.long_window = long_window
+        
+    def generate_signals(self, data):
+        # Calculate MAs
+        data['MA_short'] = data['Close'].rolling(
+            self.short_window
+        ).mean()
+        data['MA_long'] = data['Close'].rolling(
+            self.long_window
+        ).mean()
+        
+        # Generate signals
+        signals = pd.DataFrame(index=data.index)
+        signals['signal'] = np.where(
+            data['MA_short'] > data['MA_long'], 1, 0
+        )
+        signals['positions'] = signals['signal'].diff()
+        
+        return signals
+\end{lstlisting}
+
+\subsubsection{BacktestingEngine}
+
+\textbf{Purpose:} Main simulation engine that executes strategies.
+
+\textbf{Key methods:}
+\begin{lstlisting}[style=pythoncode]
+class BacktestingEngine:
+    def __init__(self, initial_capital=100000):
+        self.initial_capital = initial_capital
+        self.strategies = {}
+        
+    def add_strategy(self, strategy):
+        """Register a strategy"""
+        
+    def run_backtest(self, data, strategy_name, 
+                    commission=0.001, slippage=0.0005):
+        """
+        Execute backtest for a strategy
+        Returns: dict with portfolio, trades, metrics
+        """
+        
+    def _execute_trade(self, signal, price, date):
+        """Execute a single trade with realistic costs"""
+        
+    def _update_portfolio(self, current_price):
+        """Update portfolio value and history"""
+\end{lstlisting}
+
+\subsubsection{Reporting}
+
+\textbf{Purpose:} Calculate metrics and generate visualizations.
+
+\textbf{Metrics calculated:}
+\begin{lstlisting}[style=pythoncode]
+class Reporting:
+    @staticmethod
+    def calculate_metrics(portfolio, trades):
+        return {
+            'total_return_pct': ...,
+            'annualized_return_pct': ...,
+            'sharpe_ratio': ...,
+            'sortino_ratio': ...,
+            'max_drawdown_pct': ...,
+            'win_rate_pct': ...,
+            'total_trades': len(trades),
+            'avg_trade_return': ...,
+            'profit_factor': ...
+        }
+    
+    @staticmethod
+    def plot_equity_curve(portfolio, metrics):
+        """Generate equity curve visualization"""
+        
+    @staticmethod
+    def plot_returns_distribution(portfolio):
+        """Plot returns histogram and statistics"""
+\end{lstlisting}
+
+%==============================================================================
+\section{API Reference}
+%==============================================================================
+
+\subsection{Endpoint Categories}
+
+\subsubsection{Dashboard Endpoints}
+
+\textbf{GET /api/dashboard/stats}
+
+Returns summary statistics.
+
+\textit{Response:}
+\begin{lstlisting}[style=jsoncode]
+{
+  "total_strategies": 12,
+  "active_backtests": 0,
+  "avg_sharpe_ratio": 1.42,
+  "best_strategy_roi": 23.4
+}
+\end{lstlisting}
+
+\textbf{GET /api/dashboard/recent-backtests}
+
+Returns recent backtest runs.
+
+\textit{Response:}
+\begin{lstlisting}[style=jsoncode]
+[
+  {
+    "id": "BT-001",
+    "strategy": "Mean Reversion v2",
+    "status": "Completed",
+    "sharpe": "1.34",
+    "roi": "18.2%"
+  }
+]
+\end{lstlisting}
+
+\subsubsection{Strategy Endpoints}
+
+\textbf{GET /api/strategies}
+
+List available strategies.
+
+\textbf{POST /api/strategies}
+
+Create a new strategy.
+
+\textit{Request body:}
+\begin{lstlisting}[style=jsoncode]
+{
+  "name": "My Strategy",
+  "description": "...",
+  "asset_class": "stocks",
+  "timeframe": "1d",
+  "entry_signal": "ma-crossover",
+  "exit_signal": "stop-loss",
+  "stop_loss": 5.0,
+  "take_profit": 10.0,
+  "position_size": 10.0
+}
+\end{lstlisting}
+
+\subsubsection{Backtest Endpoints}
+
+\textbf{POST /api/backtests/start}
+
+Start a new backtest.
+
+\textit{Request:}
+\begin{lstlisting}[style=jsoncode]
+{
+  "strategy_name": "ma_crossover",
+  "start_date": "2024-01-01",
+  "end_date": "2024-12-31",
+  "initial_capital": 100000.0,
+  "commission": 0.001,
+  "slippage": 0.0005
+}
+\end{lstlisting}
+
+\textit{Response:}
+\begin{lstlisting}[style=jsoncode]
+{
+  "backtest_id": "abc123",
+  "status": "started"
+}
+\end{lstlisting}
+
+\textbf{GET /api/backtests/\{id\}/status}
+
+Check backtest progress.
+
+\textit{Response:}
+\begin{lstlisting}[style=jsoncode]
+{
+  "id": "abc123",
+  "status": "running",
+  "progress": 67.5,
+  "current_step": "Running simulation...",
+  "estimated_time_remaining": "1m 23s"
+}
+\end{lstlisting}
+
+\textbf{GET /api/backtests/\{id\}/results}
+
+Retrieve completed backtest results.
+
+\textit{Response:} See Section~\ref{sec:results-format}
+
+\textbf{POST /api/backtests/\{id\}/pause}
+
+Pause a running backtest.
+
+\textbf{POST /api/backtests/\{id\}/stop}
+
+Stop a running backtest.
+
+\subsection{Results Format}
+\label{sec:results-format}
+
+Complete backtest results structure:
+
+\begin{lstlisting}[style=jsoncode]
+{
+  "backtest_id": "abc123",
+  "strategy_name": "MovingAverageCrossover",
+  "metrics": {
+    "total_return": 18.2,
+    "annualized_return": 12.5,
+    "sharpe_ratio": 1.34,
+    "sortino_ratio": 1.90,
+    "max_drawdown": -8.7,
+    "win_rate": 53.2,
+    "total_trades": 124
+  },
+  "portfolio_data": [
+    {
+      "date": "2024-01-02",
+      "portfolio_value": 100523.4,
+      "daily_return": 0.005234,
+      "cumulative_return": 0.005234
+    },
+    // ... more dates
+  ],
+  "trades": [
+    {
+      "id": "T001",
+      "date": "2024-02-10",
+      "type": "BUY",
+      "price": 152.30,
+      "shares": 65,
+      "commission": 9.90
+    },
+    // ... more trades
+  ],
+  "completed_at": "2024-01-15T12:34:56Z"
+}
+\end{lstlisting}
+
+%==============================================================================
+\section{Running the Project}
+%==============================================================================
+
+\subsection{Prerequisites}
+
+\begin{itemize}
+  \item Python 3.8+
+  \item Node.js 16+
+  \item pip (Python package manager)
+  \item npm (Node package manager)
+\end{itemize}
+
+\subsection{Installation Steps}
+
+\subsubsection{Backend Setup}
+
+\begin{lstlisting}[style=shellcode]
+# 1. Create virtual environment
+cd BacktestingEngine
+python -m venv .venv
+
+# 2. Activate virtual environment
+source .venv/bin/activate  # Linux/Mac
+# or
+.venv\Scripts\activate     # Windows
+
+# 3. Install Python dependencies
+pip install -r requirements.txt
+
+# 4. Start the backend server
+cd ui
+uvicorn backend:app --reload --host 0.0.0.0 --port 8000
+\end{lstlisting}
+
+Backend will be available at: \url{http://localhost:8000}
+
+\subsubsection{Frontend Setup}
+
+\begin{lstlisting}[style=shellcode]
+# 1. Navigate to UI directory
+cd ui
+
+# 2. Install Node dependencies
+npm install
+
+# 3. Start development server
+npm run dev
+\end{lstlisting}
+
+Frontend will be available at: \url{http://localhost:3000}
+
+\subsubsection{Notebook Setup}
+
+\begin{lstlisting}[style=shellcode]
+# 1. Ensure virtual environment is activated
+source .venv/bin/activate
+
+# 2. Install Jupyter (if not already)
+pip install jupyter
+
+# 3. Open notebook
+jupyter notebook backtest.ipynb
+\end{lstlisting}
+
+\subsection{Testing the Setup}
+
+\textbf{Test backend:}
+\begin{lstlisting}[style=shellcode]
+curl http://localhost:8000/
+# Should return: {"message":"Backtesting Engine API",...}
+\end{lstlisting}
+
+\textbf{Test strategies endpoint:}
+\begin{lstlisting}[style=shellcode]
+curl http://localhost:8000/api/strategies
+# Should return array of available strategies
+\end{lstlisting}
+
+%==============================================================================
+\section{Example: Complete Backtest Workflow}
+%==============================================================================
+
+Let's walk through a complete example from start to finish.
+
+\subsection{Scenario}
+
+\textbf{Goal:} Test a 50/200 MA crossover strategy on synthetic stock data from Jan 1, 2024 to Dec 31, 2024.
+
+\subsection{Step-by-Step Walkthrough}
+
+\begin{example}{Step 1: Define Strategy in UI}
+Open \url{http://localhost:3000} and fill in the form:
+\begin{itemize}
+  \item Name: "Test MA Crossover"
+  \item Description: "50/200 day MA crossover"
+  \item Asset Class: Stocks
+  \item Timeframe: 1 Day
+  \item Entry Signal: MA Crossover
+  \item Exit Signal: MA Crossover
+  \item Stop Loss: 5\%
+  \item Position Size: 10\%
+\end{itemize}
+Click "Save Strategy"
+\end{example}
+
+\begin{example}{Step 2: Configure Backtest}
+Navigate to "Backtest Execution" screen:
+\begin{itemize}
+  \item Select Strategy: "Test MA Crossover"
+  \item Start Date: 2024-01-01
+  \item End Date: 2024-12-31
+  \item Initial Capital: \$100,000
+  \item Commission: 0.1\%
+  \item Slippage: 0.05\%
+\end{itemize}
+Click "Start Backtest"
+\end{example}
+
+\begin{example}{Step 3: Monitor Progress}
+Watch the progress bar:
+\begin{itemize}
+  \item 10\%: Loading data...
+  \item 30\%: Initializing strategy...
+  \item 50\%: Running simulation...
+  \item 80\%: Calculating metrics...
+  \item 100\%: Backtest completed successfully
+\end{itemize}
+\end{example}
+
+\begin{example}{Step 4: View Results}
+Results screen shows:
+
+\textbf{Key Metrics:}
+\begin{itemize}
+  \item Total Return: 18.2\%
+  \item Sharpe Ratio: 1.34
+  \item Max Drawdown: -8.7\%
+  \item Win Rate: 53.2\%
+  \item Total Trades: 124
+\end{itemize}
+
+\textbf{Charts:}
+\begin{itemize}
+  \item Equity curve: Shows steady growth
+  \item Drawdown: Largest decline was -8.7\% in August
+  \item Returns distribution: Normally distributed
+\end{itemize}
+
+\textbf{Recent Trades:}
+\begin{verbatim}
+T124 | 2024-12-20 | SELL | $158.30 | 63 shares
+T123 | 2024-11-15 | BUY  | $147.80 | 67 shares
+T122 | 2024-10-22 | SELL | $152.10 | 65 shares
+\end{verbatim}
+\end{example}
+
+\begin{example}{Step 5: Analysis}
+\textbf{Interpretation:}
+\begin{itemize}
+  \item Strategy is profitable (18.2\% return)
+  \item Risk-adjusted performance is good (Sharpe 1.34)
+  \item Drawdowns are manageable (-8.7\% max)
+  \item Win rate slightly above 50\% (53.2\%)
+\end{itemize}
+
+\textbf{Next steps:}
+\begin{itemize}
+  \item Test on real historical data
+  \item Optimize MA periods (30/100, 20/50, etc.)
+  \item Add stop-loss/take-profit rules
+  \item Test on different asset classes
+\end{itemize}
+\end{example}
+
+%==============================================================================
+\section{Advanced Topics}
+%==============================================================================
+
+\subsection{Adding a Custom Strategy}
+
+\textbf{Step 1:} Create new strategy file
+
+\begin{lstlisting}[style=pythoncode]
+# backtesting_engine/strategies/bollinger_bands.py
+
+from .base import Strategy
+import pandas as pd
+import numpy as np
+
+class BollingerBands(Strategy):
+    def __init__(self, period=20, std_dev=2):
+        self.period = period
+        self.std_dev = std_dev
+        self.name = "BollingerBands"
+        
+    def calculate_indicators(self, data):
+        # Calculate Bollinger Bands
+        data['BB_middle'] = data['Close'].rolling(
+            self.period
+        ).mean()
+        std = data['Close'].rolling(self.period).std()
+        data['BB_upper'] = data['BB_middle'] + (
+            self.std_dev * std
+        )
+        data['BB_lower'] = data['BB_middle'] - (
+            self.std_dev * std
+        )
+        return data
+        
+    def generate_signals(self, data):
+        data = self.calculate_indicators(data)
+        signals = pd.DataFrame(index=data.index)
+        
+        # Buy when price touches lower band
+        # Sell when price touches upper band
+        signals['signal'] = 0
+        signals.loc[
+            data['Close'] <= data['BB_lower'], 'signal'
+        ] = 1
+        signals.loc[
+            data['Close'] >= data['BB_upper'], 'signal'
+        ] = -1
+        
+        signals['positions'] = signals['signal'].diff()
+        return signals
+\end{lstlisting}
+
+\textbf{Step 2:} Register in backend
+
+\begin{lstlisting}[style=pythoncode]
+# ui/backend.py
+
+from backtesting_engine import BollingerBands
+
+@app.post("/api/strategies")
+async def create_strategy(strategy: StrategyConfig):
+    # ... existing code ...
+    elif strategy.entry_signal == "bollinger-bands":
+        new_strategy = BollingerBands(
+            period=20, 
+            std_dev=2
+        )
+    # ... rest of code ...
+\end{lstlisting}
+
+\subsection{Performance Optimization Tips}
+
+\begin{warning}
+For large datasets (>10 years daily data):
+\begin{enumerate}
+  \item Use vectorized operations (NumPy/Pandas)
+  \item Avoid Python loops where possible
+  \item Cache indicator calculations
+  \item Consider using Numba for hot paths
+  \item Batch process multiple strategies in parallel
+\end{enumerate}
+\end{warning}
+
+\subsection{Common Pitfalls and Solutions}
+
+\begin{enumerate}
+  \item \textbf{Look-ahead bias}: Using future data in decisions
+  \begin{itemize}
+    \item Solution: Ensure indicators only use past data
+  \end{itemize}
+  
+  \item \textbf{Overfitting}: Strategy works on backtest but fails live
+  \begin{itemize}
+    \item Solution: Use out-of-sample testing, walk-forward analysis
+  \end{itemize}
+  
+  \item \textbf{Ignoring costs}: Unrealistic performance from zero costs
+  \begin{itemize}
+    \item Solution: Always include commission and slippage
+  \end{itemize}
+  
+  \item \textbf{Survivorship bias}: Testing only on surviving companies
+  \begin{itemize}
+    \item Solution: Include delisted stocks in dataset
+  \end{itemize}
+\end{enumerate}
+
+%==============================================================================
+\section{Study Checklist}
+%==============================================================================
+
+Use this checklist to verify your understanding:
+
+\subsection{Conceptual Understanding}
+\begin{itemize}
+  \item[$\square$] I understand what backtesting is and why it's important
+  \item[$\square$] I can explain the difference between strategies
+  \item[$\square$] I understand key metrics (Sharpe, drawdown, win rate)
+  \item[$\square$] I know why commission and slippage matter
+  \item[$\square$] I can interpret backtest results
+\end{itemize}
+
+\subsection{System Architecture}
+\begin{itemize}
+  \item[$\square$] I understand the three-tier architecture
+  \item[$\square$] I know what each component does (frontend/backend/engine)
+  \item[$\square$] I can trace a request from UI to results
+  \item[$\square$] I understand the API endpoints
+  \item[$\square$] I know where strategies are defined
+\end{itemize}
+
+\subsection{Implementation}
+\begin{itemize}
+  \item[$\square$] I can run the backend server
+  \item[$\square$] I can run the frontend
+  \item[$\square$] I can create a strategy through the UI
+  \item[$\square$] I can run a backtest
+  \item[$\square$] I can interpret the results
+\end{itemize}
+
+\subsection{Advanced}
+\begin{itemize}
+  \item[$\square$] I can add a custom strategy
+  \item[$\square$] I understand the simulation loop
+  \item[$\square$] I can modify metrics calculations
+  \item[$\square$] I can add new visualizations
+  \item[$\square$] I understand common pitfalls
+\end{itemize}
+
+%==============================================================================
+\section{Further Resources}
+%==============================================================================
+
+\subsection{Recommended Reading}
+\begin{itemize}
+  \item \textit{Algorithmic Trading} by Ernest P. Chan
+  \item \textit{Quantitative Trading} by Ernest P. Chan
+  \item \textit{Python for Finance} by Yves Hilpisch
+  \item FastAPI Documentation: \url{https://fastapi.tiangolo.com}
+  \item React Documentation: \url{https://react.dev}
+\end{itemize}
+
+\subsection{Online Courses}
+\begin{itemize}
+  \item Coursera: "Machine Learning for Trading"
+  \item Udemy: "Algorithmic Trading \& Quantitative Analysis"
+  \item YouTube: "sentdex" Python finance tutorials
+\end{itemize}
+
+\subsection{Related Projects}
+\begin{itemize}
+  \item Zipline: Pythonic algorithmic trading library
+  \item Backtrader: Feature-rich backtesting framework
+  \item QuantConnect: Cloud-based backtesting platform
+  \item PyAlgoTrade: Event-driven backtesting library
+\end{itemize}
+
+%==============================================================================
+\section*{Compilation Instructions}
+%==============================================================================
+
+To compile this document:
+
+\begin{lstlisting}[style=shellcode]
+# Option 1: Using latexmk (recommended)
+latexmk -pdf docs/study-guide.tex
+
+# Option 2: Using pdflatex (run twice for ToC)
+pdflatex docs/study-guide.tex
+pdflatex docs/study-guide.tex
+
+# Clean auxiliary files
+latexmk -c docs/study-guide.tex
+\end{lstlisting}
+
+Output: \texttt{study-guide.pdf}
+
+\end{document}

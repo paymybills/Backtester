@@ -1,0 +1,6338 @@
+[
+  {
+    "id": "5b5f790e-ee78-446f-bdd5-d57473f9f572",
+    "strategy_name": "Test MA",
+    "status": "completed",
+    "started_at": "2025-10-27T06:00:14.770300",
+    "completed_at": "2025-10-27T06:00:19.035403",
+    "duration": "0:00:04.265115",
+    "config": {
+      "strategy_name": "Test MA",
+      "start_date": "2023-01-01",
+      "end_date": "2023-12-31",
+      "initial_capital": 100000.0,
+      "commission": 0.001,
+      "slippage": 0.0005,
+      "data_source": "synthetic"
+    },
+    "metrics": {
+      "total_return": 19.438396038065722,
+      "annualized_return": 19.68842913699045,
+      "sharpe_ratio": 1.852852430352468,
+      "sortino_ratio": 1.6842348103951028,
+      "max_drawdown": -3.99545365330259,
+      "win_rate": 13.513513513513514,
+      "total_trades": 0
+    },
+    "saved_at": "2025-10-27T06:00:19.035618"
+  },
+  {
+    "id": "a51a6c37-6c08-4ad0-a304-59f051f340f8",
+    "strategy_name": "New Thing",
+    "status": "completed",
+    "started_at": "2025-10-27T06:00:26.094089",
+    "completed_at": "2025-10-27T06:00:30.379207",
+    "duration": "0:00:04.285128",
+    "config": {
+      "strategy_name": "New Thing",
+      "start_date": "2023-01-01",
+      "end_date": "2023-12-31",
+      "initial_capital": 100000.0,
+      "commission": 0.001,
+      "slippage": 0.0005,
+      "data_source": "synthetic"
+    },
+    "metrics": {
+      "total_return": 6.966637911147903,
+      "annualized_return": 7.051481542485072,
+      "sharpe_ratio": 0.4811884029162695,
+      "sortino_ratio": 0.4519083787639655,
+      "max_drawdown": -10.851436982498793,
+      "win_rate": 11.196911196911197,
+      "total_trades": 0
+    },
+    "saved_at": "2025-10-27T06:00:30.379449"
+  },
+  {
+    "id": "3d496801-6f2e-4cec-bb76-9a9d44118e71",
+    "strategy_name": "New Thing",
+    "status": "completed",
+    "started_at": "2025-10-27T06:00:46.421260",
+    "completed_at": "2025-10-27T06:00:50.734480",
+    "duration": "0:00:04.313230",
+    "config": {
+      "strategy_name": "New Thing",
+      "start_date": "2023-01-01",
+      "end_date": "2023-12-31",
+      "initial_capital": 100000.0,
+      "commission": 0.001,
+      "slippage": 0.0005,
+      "data_source": "synthetic"
+    },
+    "metrics": {
+      "total_return": 11.568550251367181,
+      "annualized_return": 11.712428325298285,
+      "sharpe_ratio": 1.618769083837397,
+      "sortino_ratio": 1.4709469243849271,
+      "max_drawdown": -2.3068901134002435,
+      "win_rate": 13.127413127413126,
+      "total_trades": 0
+    },
+    "saved_at": "2025-10-27T06:00:50.734893"
+  },
+  {
+    "id": "6f892338-cf99-4083-8ff9-b9f654e516f8",
+    "strategy_name": "Test MA Strategy",
+    "status": "completed",
+    "started_at": "2025-10-27T06:01:30.126171",
+    "completed_at": "2025-10-27T06:01:34.407681",
+    "duration": "0:00:04.281519",
+    "config": {
+      "strategy_name": "Test MA Strategy",
+      "start_date": "2023-01-01",
+      "end_date": "2023-12-31",
+      "initial_capital": 100000.0,
+      "commission": 0.001,
+      "slippage": 0.0005,
+      "data_source": "synthetic"
+    },
+    "metrics": {
+      "total_return": 0.0,
+      "annualized_return": 0.0,
+      "sharpe_ratio": NaN,
+      "sortino_ratio": NaN,
+      "max_drawdown": 0.0,
+      "win_rate": 0.0,
+      "total_trades": 0
+    },
+    "saved_at": "2025-10-27T06:01:34.408047"
+  },
+  {
+    "id": "7a4eb2ff-307e-4266-95bd-8db4fad226ba",
+    "strategy_name": "Test MA Strategy",
+    "status": "completed",
+    "started_at": "2025-10-27T06:03:27.335874",
+    "completed_at": "2025-10-27T06:03:31.848437",
+    "duration": "0:00:04.512581",
+    "config": {
+      "strategy_name": "Test MA Strategy",
+      "start_date": "2023-01-01",
+      "end_date": "2023-12-31",
+      "initial_capital": 100000.0,
+      "commission": 0.001,
+      "slippage": 0.0005,
+      "data_source": "synthetic"
+    },
+    "metrics": {
+      "total_return": 0.0,
+      "annualized_return": 0.0,
+      "sharpe_ratio": NaN,
+      "sortino_ratio": NaN,
+      "max_drawdown": 0.0,
+      "win_rate": 0.0,
+      "total_trades": 0
+    },
+    "saved_at": "2025-10-27T06:03:31.848923"
+  },
+  {
+    "id": "07631aca-d585-4733-953f-1e0ebc93d87e",
+    "strategy_name": "New Thing",
+    "status": "completed",
+    "started_at": "2025-10-27T06:03:34.202947",
+    "completed_at": "2025-10-27T06:03:38.531386",
+    "duration": "0:00:04.328451",
+    "config": {
+      "strategy_name": "New Thing",
+      "start_date": "2023-01-01",
+      "end_date": "2023-12-31",
+      "initial_capital": 100000.0,
+      "commission": 0.001,
+      "slippage": 0.0005,
+      "data_source": "synthetic"
+    },
+    "metrics": {
+      "total_return": 18.81369726686632,
+      "annualized_return": 19.055072268496875,
+      "sharpe_ratio": 1.9952023250645992,
+      "sortino_ratio": 1.5469367777223726,
+      "max_drawdown": -4.722698192325418,
+      "win_rate": 13.127413127413126,
+      "total_trades": 0
+    },
+    "saved_at": "2025-10-27T06:03:38.531835"
+  },
+  {
+    "id": "b4291661-aa1f-45ac-95df-31637766f1f5",
+    "strategy_name": "New Thing",
+    "status": "completed",
+    "started_at": "2025-10-27T06:36:43.698455",
+    "completed_at": "2025-10-27T06:36:48.141047",
+    "duration": "0:00:04.442602",
+    "config": {
+      "strategy_name": "New Thing",
+      "start_date": "2023-01-01",
+      "end_date": "2023-12-31",
+      "initial_capital": 100000.0,
+      "commission": 0.001,
+      "slippage": 0.0005,
+      "data_source": "synthetic",
+      "ticker": "AAPL"
+    },
+    "metrics": {
+      "total_return": 8.636071108481833,
+      "annualized_return": 8.742062986093346,
+      "sharpe_ratio": 1.409020598476398,
+      "sortino_ratio": 1.149098215720661,
+      "max_drawdown": -3.03695398322589,
+      "win_rate": 13.513513513513514,
+      "total_trades": 0
+    },
+    "saved_at": "2025-10-27T06:36:48.141479"
+  },
+  {
+    "id": "567e523b-fd87-4b1d-ae7c-285d051345d3",
+    "strategy_name": "New Thing",
+    "status": "completed",
+    "started_at": "2025-10-27T06:42:50.597834",
+    "completed_at": "2025-10-27T06:42:55.938071",
+    "duration": "0:00:05.340250",
+    "config": {
+      "strategy_name": "New Thing",
+      "start_date": "2023-01-01",
+      "end_date": "2023-12-31",
+      "initial_capital": 100000.0,
+      "commission": 0.001,
+      "slippage": 0.0005,
+      "data_source": "yahoo",
+      "ticker": "AAPL"
+    },
+    "metrics": {
+      "total_return": 9.160410711212156,
+      "annualized_return": 9.300029193127312,
+      "sharpe_ratio": 1.3500547101950744,
+      "sortino_ratio": 1.074538318310127,
+      "max_drawdown": -4.8147444706726095,
+      "win_rate": 11.244979919678714,
+      "total_trades": 0
+    },
+    "saved_at": "2025-10-27T06:42:55.938563"
+  },
+  {
+    "id": "28a18e94-75b8-44e2-a195-4d71e7cb9a2d",
+    "strategy_name": "Test MA Strategy",
+    "status": "completed",
+    "started_at": "2025-10-27T06:44:13.807055",
+    "completed_at": "2025-10-27T06:44:18.119850",
+    "duration": "0:00:04.312809",
+    "config": {
+      "strategy_name": "Test MA Strategy",
+      "start_date": "2023-01-01",
+      "end_date": "2023-12-31",
+      "initial_capital": 1000000.0,
+      "commission": 0.001,
+      "slippage": 0.0005,
+      "data_source": "yahoo",
+      "ticker": "AAPL"
+    },
+    "metrics": {
+      "total_return": 9.17049556704103,
+      "annualized_return": 9.310274213522973,
+      "sharpe_ratio": 1.3500998320651716,
+      "sortino_ratio": 1.0745320433750103,
+      "max_drawdown": -4.820045106787107,
+      "win_rate": 11.244979919678714,
+      "total_trades": 0
+    },
+    "saved_at": "2025-10-27T06:44:18.120324"
+  },
+  {
+    "id": "ee24130b-5874-4488-b726-3b68a97d42c5",
+    "strategy_name": "New Thing",
+    "status": "completed",
+    "started_at": "2025-10-27T06:58:07.077673",
+    "completed_at": "2025-10-27T06:58:13.381972",
+    "duration": "0:00:06.304310",
+    "config": {
+      "strategy_name": "New Thing",
+      "start_date": "2023-01-01",
+      "end_date": "2023-12-31",
+      "initial_capital": 100000.0,
+      "commission": 0.0021,
+      "slippage": 0.3005,
+      "data_source": "yahoo",
+      "ticker": "MSFT"
+    },
+    "metrics": {
+      "total_return": 0.12804993648681645,
+      "annualized_return": 0.13003383416964964,
+      "sharpe_ratio": 1.501602855526914,
+      "sortino_ratio": 0.9447292863322768,
+      "max_drawdown": -0.041851258738810654,
+      "winning_days": 0
+    },
+    "portfolio_data": [
+      {
+        "Date": "2023-01-03",
+        "total": 100000.0,
+        "daily_returns": NaN,
+        "cum_returns": NaN,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-01-04",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-01-05",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-01-06",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-01-09",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-01-10",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-01-11",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-01-12",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-01-13",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-01-17",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-01-18",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-01-19",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-01-20",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-01-23",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-01-24",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-01-25",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-01-26",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-01-27",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-01-30",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-01-31",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-02-01",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-02-02",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-02-03",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-02-06",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-02-07",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-02-08",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-02-09",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-02-10",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-02-13",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-02-14",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-02-15",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-02-16",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-02-17",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-02-21",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-02-22",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-02-23",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-02-24",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-02-27",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-02-28",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-03-01",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-03-02",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-03-03",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-03-06",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-03-07",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-03-08",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-03-09",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-03-10",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-03-13",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-03-14",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-03-15",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-03-16",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-03-17",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-03-20",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-03-21",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-03-22",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-03-23",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-03-24",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-03-27",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-03-28",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-03-29",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-03-30",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-03-31",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-04-03",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-04-04",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-04-05",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-04-06",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-04-10",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-04-11",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-04-12",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-04-13",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-04-14",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-04-17",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-04-18",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-04-19",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-04-20",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-04-21",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-04-24",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-04-25",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-04-26",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-04-27",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-04-28",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-05-01",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-05-02",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-05-03",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-05-04",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-05-05",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-05-08",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-05-09",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-05-10",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-05-11",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-05-12",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-05-15",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-05-16",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-05-17",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-05-18",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-05-19",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-05-22",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-05-23",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-05-24",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-05-25",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-05-26",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-05-30",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-05-31",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-06-01",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-06-02",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-06-05",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-06-06",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-06-07",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-06-08",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-06-09",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-06-12",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-06-13",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-06-14",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-06-15",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-06-16",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-06-20",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-06-21",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-06-22",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-06-23",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-06-26",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-06-27",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-06-28",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-06-29",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-06-30",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-07-03",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-07-05",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-07-06",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-07-07",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-07-10",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-07-11",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-07-12",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-07-13",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-07-14",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-07-17",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-07-18",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-07-19",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-07-20",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-07-21",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-07-24",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-07-25",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-07-26",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-07-27",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-07-28",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-07-31",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-08-01",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-08-02",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-08-03",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-08-04",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-08-07",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-08-08",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-08-09",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-08-10",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-08-11",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-08-14",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-08-15",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-08-16",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-08-17",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-08-18",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-08-21",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-08-22",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-08-23",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-08-24",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-08-25",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-08-28",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-08-29",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-08-30",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-08-31",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-09-01",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-09-05",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-09-06",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-09-07",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-09-08",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-09-11",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-09-12",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-09-13",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-09-14",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-09-15",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-09-18",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-09-19",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-09-20",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-09-21",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-09-22",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-09-25",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-09-26",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-09-27",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-09-28",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-09-29",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-10-02",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-10-03",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-10-04",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-10-05",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-10-06",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-10-09",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-10-10",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-10-11",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-10-12",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-10-13",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-10-16",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-10-17",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-10-18",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-10-19",
+        "total": 99810.68731323243,
+        "daily_returns": -0.0018931268676757318,
+        "cum_returns": -0.0018931268676757318,
+        "cash": 5154.343929443363,
+        "holdings": 94656.34338378906
+      },
+      {
+        "Date": "2023-10-20",
+        "total": 98482.2080041504,
+        "daily_returns": -0.01330999059161786,
+        "cum_returns": -0.015177919958496044,
+        "cash": 5154.343929443363,
+        "holdings": 93327.86407470703
+      },
+      {
+        "Date": "2023-10-23",
+        "total": 99239.2896081543,
+        "daily_returns": 0.007687496242691827,
+        "cum_returns": -0.007607103918456981,
+        "cash": 5154.343929443363,
+        "holdings": 94084.94567871094
+      },
+      {
+        "Date": "2023-10-24",
+        "total": 99584.97442260743,
+        "daily_returns": 0.003483346321986547,
+        "cum_returns": -0.004150255773925804,
+        "cash": 5154.343929443363,
+        "holdings": 94430.63049316406
+      },
+      {
+        "Date": "2023-10-25",
+        "total": 102481.92113891602,
+        "daily_returns": 0.02909019892915632,
+        "cum_returns": 0.0248192113891601,
+        "cash": 5154.343929443363,
+        "holdings": 97327.57720947266
+      },
+      {
+        "Date": "2023-10-26",
+        "total": 98830.76025024414,
+        "daily_returns": -0.03562736576456893,
+        "cum_returns": -0.011692397497558571,
+        "cash": 5154.343929443363,
+        "holdings": 93676.41632080078
+      },
+      {
+        "Date": "2023-10-27",
+        "total": 99379.28930297852,
+        "daily_returns": 0.005550185502423366,
+        "cum_returns": -0.00620710697021476,
+        "cash": 5154.343929443363,
+        "holdings": 94224.94537353516
+      },
+      {
+        "Date": "2023-10-30",
+        "total": 101521.99529663086,
+        "daily_returns": 0.0215608906914182,
+        "cum_returns": 0.015219952966308625,
+        "cash": 5154.343929443363,
+        "holdings": 96367.6513671875
+      },
+      {
+        "Date": "2023-10-31",
+        "total": 101750.5313684082,
+        "daily_returns": 0.0022510990954187626,
+        "cum_returns": 0.017505313684082147,
+        "cash": 5154.343929443363,
+        "holdings": 96596.18743896484
+      },
+      {
+        "Date": "2023-11-01",
+        "total": 104024.67901245118,
+        "daily_returns": 0.02235022867653602,
+        "cum_returns": 0.04024679012451182,
+        "cash": 5154.343929443363,
+        "holdings": 98870.33508300781
+      },
+      {
+        "Date": "2023-11-02",
+        "total": 104667.47930541993,
+        "daily_returns": 0.006179305709675065,
+        "cum_returns": 0.046674793054199304,
+        "cash": 5154.343929443363,
+        "holdings": 99513.13537597656
+      },
+      {
+        "Date": "2023-11-03",
+        "total": 105947.39812866211,
+        "daily_returns": 0.012228428846627448,
+        "cum_returns": 0.05947398128662118,
+        "cash": 5154.343929443363,
+        "holdings": 100793.05419921875
+      },
+      {
+        "Date": "2023-11-06",
+        "total": 107013.05608764649,
+        "daily_returns": 0.010058368377203974,
+        "cum_returns": 0.07013056087646485,
+        "cash": 5154.343929443363,
+        "holdings": 101858.71215820312
+      },
+      {
+        "Date": "2023-11-07",
+        "total": 108155.80724731446,
+        "daily_returns": 0.010678614380772666,
+        "cum_returns": 0.08155807247314462,
+        "cash": 5154.343929443363,
+        "holdings": 103001.4633178711
+      },
+      {
+        "Date": "2023-11-08",
+        "total": 108918.64141479493,
+        "daily_returns": 0.0070531040994972205,
+        "cum_returns": 0.08918641414794926,
+        "cash": 5154.343929443363,
+        "holdings": 103764.29748535156
+      },
+      {
+        "Date": "2023-11-09",
+        "total": 108201.5357019043,
+        "daily_returns": -0.006583865751314977,
+        "cum_returns": 0.08201535701904294,
+        "cash": 5154.343929443363,
+        "holdings": 103047.19177246094
+      },
+      {
+        "Date": "2023-11-10",
+        "total": 110767.06396118164,
+        "daily_returns": 0.023710645534139152,
+        "cum_returns": 0.10767063961181655,
+        "cash": 5154.343929443363,
+        "holdings": 105612.72003173828
+      },
+      {
+        "Date": "2023-11-13",
+        "total": 109912.84368530274,
+        "daily_returns": -0.007711861679192578,
+        "cum_returns": 0.09912843685302741,
+        "cash": 5154.343929443363,
+        "holdings": 104758.49975585938
+      },
+      {
+        "Date": "2023-11-14",
+        "total": 110938.4903527832,
+        "daily_returns": 0.009331454205816492,
+        "cum_returns": 0.10938490352783203,
+        "cash": 5154.343929443363,
+        "holdings": 105784.14642333984
+      },
+      {
+        "Date": "2023-11-15",
+        "total": 110981.43102661133,
+        "daily_returns": 0.0003870674072774527,
+        "cum_returns": 0.10981431026611332,
+        "cash": 5154.343929443363,
+        "holdings": 105827.08709716797
+      },
+      {
+        "Date": "2023-11-16",
+        "total": 112842.20830932618,
+        "daily_returns": 0.016766564149534702,
+        "cum_returns": 0.12842208309326164,
+        "cash": 5154.343929443363,
+        "holdings": 107687.86437988281
+      },
+      {
+        "Date": "2023-11-17",
+        "total": 111032.95629516602,
+        "daily_returns": -0.016033468692854602,
+        "cum_returns": 0.11032956295166008,
+        "cash": 5154.343929443363,
+        "holdings": 105878.61236572266
+      },
+      {
+        "Date": "2023-11-20",
+        "total": 113205.77917114258,
+        "daily_returns": 0.019569170708203076,
+        "cum_returns": 0.13205779171142562,
+        "cash": 5154.343929443363,
+        "holdings": 108051.43524169922
+      },
+      {
+        "Date": "2023-11-21",
+        "total": 111954.7647668457,
+        "daily_returns": -0.011050799821850199,
+        "cum_returns": 0.11954764766845694,
+        "cash": 5154.343929443363,
+        "holdings": 106800.42083740234
+      },
+      {
+        "Date": "2023-11-22",
+        "total": 113323.16686645508,
+        "daily_returns": 0.012222812512349801,
+        "cum_returns": 0.13323166866455072,
+        "cash": 5154.343929443363,
+        "holdings": 108168.82293701172
+      },
+      {
+        "Date": "2023-11-24",
+        "total": 113202.9028894043,
+        "daily_returns": -0.0010612479369951355,
+        "cum_returns": 0.1320290288940429,
+        "cash": 5154.343929443363,
+        "holdings": 108048.55895996094
+      },
+      {
+        "Date": "2023-11-27",
+        "total": 113540.71111694336,
+        "daily_returns": 0.0029840950975354996,
+        "cum_returns": 0.1354071111694335,
+        "cash": 5154.343929443363,
+        "holdings": 108386.3671875
+      },
+      {
+        "Date": "2023-11-28",
+        "total": 114711.57903686524,
+        "daily_returns": 0.010312318008259824,
+        "cum_returns": 0.1471157903686524,
+        "cash": 5154.343929443363,
+        "holdings": 109557.23510742188
+      },
+      {
+        "Date": "2023-11-29",
+        "total": 113609.42327514649,
+        "daily_returns": -0.00960806024093297,
+        "cum_returns": 0.13609423275146493,
+        "cash": 5154.343929443363,
+        "holdings": 108455.07934570312
+      },
+      {
+        "Date": "2023-11-30",
+        "total": 113626.60131469727,
+        "daily_returns": 0.00015120259442902295,
+        "cum_returns": 0.13626601314697284,
+        "cash": 5154.343929443363,
+        "holdings": 108472.2573852539
+      },
+      {
+        "Date": "2023-12-01",
+        "total": 112367.00231567383,
+        "daily_returns": -0.011085423522744331,
+        "cum_returns": 0.12367002315673847,
+        "cash": 5154.343929443363,
+        "holdings": 107212.65838623047
+      },
+      {
+        "Date": "2023-12-04",
+        "total": 110829.70495239258,
+        "daily_returns": -0.013681039198344958,
+        "cum_returns": 0.10829704952392594,
+        "cash": 5154.343929443363,
+        "holdings": 105675.36102294922
+      },
+      {
+        "Date": "2023-12-05",
+        "total": 111797.3038293457,
+        "daily_returns": 0.00873050124394692,
+        "cum_returns": 0.11797303829345718,
+        "cash": 5154.343929443363,
+        "holdings": 106642.95989990234
+      },
+      {
+        "Date": "2023-12-06",
+        "total": 110732.36272827149,
+        "daily_returns": -0.009525642073621166,
+        "cum_returns": 0.10732362728271494,
+        "cash": 5154.343929443363,
+        "holdings": 105578.01879882812
+      },
+      {
+        "Date": "2023-12-07",
+        "total": 111347.85161987305,
+        "daily_returns": 0.005558346958710825,
+        "cum_returns": 0.1134785161987304,
+        "cash": 5154.343929443363,
+        "holdings": 106193.50769042969
+      },
+      {
+        "Date": "2023-12-08",
+        "total": 112286.83813110352,
+        "daily_returns": 0.008432910896530421,
+        "cum_returns": 0.12286838131103517,
+        "cash": 5154.343929443363,
+        "holdings": 107132.49420166016
+      },
+      {
+        "Date": "2023-12-11",
+        "total": 111448.06127563477,
+        "daily_returns": -0.007469948120628511,
+        "cum_returns": 0.11448061275634758,
+        "cash": 5154.343929443363,
+        "holdings": 106293.7173461914
+      },
+      {
+        "Date": "2023-12-12",
+        "total": 112329.7876550293,
+        "daily_returns": 0.007911545246299445,
+        "cum_returns": 0.123297876550293,
+        "cash": 5154.343929443363,
+        "holdings": 107175.44372558594
+      },
+      {
+        "Date": "2023-12-13",
+        "total": 112326.92022338868,
+        "daily_returns": -2.5526903419725855e-05,
+        "cum_returns": 0.12326920223388682,
+        "cash": 5154.343929443363,
+        "holdings": 107172.57629394531
+      },
+      {
+        "Date": "2023-12-14",
+        "total": 109910.75506225586,
+        "daily_returns": -0.021510116687323944,
+        "cum_returns": 0.09910755062255872,
+        "cash": 5154.343929443363,
+        "holdings": 104756.4111328125
+      },
+      {
+        "Date": "2023-12-15",
+        "total": 111284.86547485352,
+        "daily_returns": 0.012502055980047944,
+        "cum_returns": 0.11284865474853523,
+        "cash": 5154.343929443363,
+        "holdings": 106130.52154541016
+      },
+      {
+        "Date": "2023-12-18",
+        "total": 111834.51848999024,
+        "daily_returns": 0.0049391533412144195,
+        "cum_returns": 0.11834518489990242,
+        "cash": 5154.343929443363,
+        "holdings": 106680.17456054688
+      },
+      {
+        "Date": "2023-12-19",
+        "total": 112009.15746704102,
+        "daily_returns": 0.001561583841990677,
+        "cum_returns": 0.1200915746704101,
+        "cash": 5154.343929443363,
+        "holdings": 106854.81353759766
+      },
+      {
+        "Date": "2023-12-20",
+        "total": 111253.38567749024,
+        "daily_returns": -0.006747410717495739,
+        "cum_returns": 0.11253385677490235,
+        "cash": 5154.343929443363,
+        "holdings": 106099.04174804688
+      },
+      {
+        "Date": "2023-12-21",
+        "total": 112089.30395141602,
+        "daily_returns": 0.007513643462042641,
+        "cum_returns": 0.12089303951416008,
+        "cash": 5154.343929443363,
+        "holdings": 106934.96002197266
+      },
+      {
+        "Date": "2023-12-22",
+        "total": 112387.02123657227,
+        "daily_returns": 0.002656072209042293,
+        "cum_returns": 0.12387021236572249,
+        "cash": 5154.343929443363,
+        "holdings": 107232.6773071289
+      },
+      {
+        "Date": "2023-12-26",
+        "total": 112409.9341394043,
+        "daily_returns": 0.00020387499001151,
+        "cum_returns": 0.12409934139404277,
+        "cash": 5154.343929443363,
+        "holdings": 107255.59020996094
+      },
+      {
+        "Date": "2023-12-27",
+        "total": 112241.03002563477,
+        "daily_returns": -0.0015025728380915204,
+        "cum_returns": 0.12241030025634747,
+        "cash": 5154.343929443363,
+        "holdings": 107086.6860961914
+      },
+      {
+        "Date": "2023-12-28",
+        "total": 112587.4228479004,
+        "daily_returns": 0.003086151491896505,
+        "cum_returns": 0.12587422847900354,
+        "cash": 5154.343929443363,
+        "holdings": 107433.07891845703
+      },
+      {
+        "Date": "2023-12-29",
+        "total": 112804.99364868164,
+        "daily_returns": 0.001932460973684158,
+        "cum_returns": 0.12804993648681595,
+        "cash": 5154.343929443363,
+        "holdings": 107650.64971923828
+      }
+    ],
+    "trades": [],
+    "saved_at": "2025-10-27T06:58:13.382435"
+  },
+  {
+    "id": "62e23dd3-ec37-4475-a38c-b518bd4fe86e",
+    "strategy_name": "New Thing",
+    "status": "completed",
+    "started_at": "2025-10-27T06:59:10.247807",
+    "completed_at": "2025-10-27T06:59:15.247564",
+    "duration": "0:00:04.999778",
+    "config": {
+      "strategy_name": "New Thing",
+      "start_date": "2023-01-01",
+      "end_date": "2023-12-31",
+      "initial_capital": 100000.0,
+      "commission": 0.001,
+      "slippage": 0.0005,
+      "data_source": "yahoo",
+      "ticker": "AAPL"
+    },
+    "metrics": {
+      "total_return": 0.09160402378540035,
+      "annualized_return": 0.0930002072812397,
+      "sharpe_ratio": 1.3500500745175956,
+      "sortino_ratio": 1.0745460073351907,
+      "max_drawdown": -0.048147361712646525,
+      "winning_days": 0
+    },
+    "portfolio_data": [
+      {
+        "Date": "2023-01-03",
+        "total": 100000.0,
+        "daily_returns": NaN,
+        "cum_returns": NaN,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-01-04",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-01-05",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-01-06",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-01-09",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-01-10",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-01-11",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-01-12",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-01-13",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-01-17",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-01-18",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-01-19",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-01-20",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-01-23",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-01-24",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-01-25",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-01-26",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-01-27",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-01-30",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-01-31",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-02-01",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-02-02",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-02-03",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-02-06",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-02-07",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-02-08",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-02-09",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-02-10",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-02-13",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-02-14",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-02-15",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-02-16",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-02-17",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-02-21",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-02-22",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-02-23",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-02-24",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-02-27",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-02-28",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-03-01",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-03-02",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-03-03",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-03-06",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-03-07",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-03-08",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-03-09",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-03-10",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-03-13",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-03-14",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-03-15",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-03-16",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-03-17",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-03-20",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-03-21",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-03-22",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-03-23",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-03-24",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-03-27",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-03-28",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-03-29",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-03-30",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-03-31",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-04-03",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-04-04",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-04-05",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-04-06",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-04-10",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-04-11",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-04-12",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-04-13",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-04-14",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-04-17",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-04-18",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-04-19",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-04-20",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-04-21",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-04-24",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-04-25",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-04-26",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-04-27",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-04-28",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-05-01",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-05-02",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-05-03",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-05-04",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-05-05",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-05-08",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-05-09",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-05-10",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-05-11",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-05-12",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-05-15",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-05-16",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-05-17",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-05-18",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-05-19",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-05-22",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-05-23",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-05-24",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-05-25",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-05-26",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-05-30",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-05-31",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-06-01",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-06-02",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-06-05",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-06-06",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-06-07",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-06-08",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-06-09",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-06-12",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-06-13",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-06-14",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-06-15",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-06-16",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-06-20",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-06-21",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-06-22",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-06-23",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-06-26",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-06-27",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-06-28",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-06-29",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-06-30",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-07-03",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-07-05",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-07-06",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-07-07",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-07-10",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-07-11",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-07-12",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-07-13",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-07-14",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-07-17",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-07-18",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-07-19",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-07-20",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-07-21",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-07-24",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-07-25",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-07-26",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-07-27",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-07-28",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-07-31",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-08-01",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-08-02",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-08-03",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-08-04",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-08-07",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-08-08",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-08-09",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-08-10",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-08-11",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-08-14",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-08-15",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-08-16",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-08-17",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-08-18",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-08-21",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-08-22",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-08-23",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-08-24",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-08-25",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-08-28",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-08-29",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-08-30",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-08-31",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-09-01",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-09-05",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-09-06",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-09-07",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-09-08",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-09-11",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-09-12",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-09-13",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-09-14",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-09-15",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-09-18",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-09-19",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-09-20",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-09-21",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-09-22",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-09-25",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-09-26",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-09-27",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-09-28",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-09-29",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-10-02",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-10-03",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-10-04",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-10-05",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-10-06",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-10-09",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-10-10",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-10-11",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-10-12",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-10-13",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-10-16",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-10-17",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-10-18",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-10-19",
+        "total": 99810.60371826171,
+        "daily_returns": -0.0018939628173828549,
+        "cum_returns": -0.0018939628173828549,
+        "cash": 5112.46284912109,
+        "holdings": 94698.14086914062
+      },
+      {
+        "Date": "2023-10-20",
+        "total": 98418.14102600097,
+        "daily_returns": -0.01395104969198746,
+        "cum_returns": -0.015818589739990285,
+        "cash": 5112.46284912109,
+        "holdings": 93305.67817687988
+      },
+      {
+        "Date": "2023-10-23",
+        "total": 98482.90634582519,
+        "daily_returns": 0.0006580628240795416,
+        "cum_returns": -0.015170936541747948,
+        "cash": 5112.46284912109,
+        "holdings": 93370.4434967041
+      },
+      {
+        "Date": "2023-10-24",
+        "total": 98720.39581726074,
+        "daily_returns": 0.0024114791109188793,
+        "cum_returns": -0.012796041827392579,
+        "cash": 5112.46284912109,
+        "holdings": 93607.93296813965
+      },
+      {
+        "Date": "2023-10-25",
+        "total": 97457.44713256836,
+        "daily_returns": -0.012793189028842633,
+        "cum_returns": -0.025425528674316356,
+        "cash": 5112.46284912109,
+        "holdings": 92344.98428344727
+      },
+      {
+        "Date": "2023-10-26",
+        "total": 95185.26382873535,
+        "daily_returns": -0.023314619566652817,
+        "cum_returns": -0.04814736171264644,
+        "cash": 5112.46284912109,
+        "holdings": 90072.80097961426
+      },
+      {
+        "Date": "2023-10-27",
+        "total": 95903.07114074707,
+        "daily_returns": 0.007541160082334297,
+        "cum_returns": -0.04096928859252924,
+        "cash": 5112.46284912109,
+        "holdings": 90790.60829162598
+      },
+      {
+        "Date": "2023-10-30",
+        "total": 97020.27290771484,
+        "daily_returns": 0.011649280400292561,
+        "cum_returns": -0.02979727092285156,
+        "cash": 5112.46284912109,
+        "holdings": 91907.81005859375
+      },
+      {
+        "Date": "2023-10-31",
+        "total": 97279.34250305175,
+        "daily_returns": 0.0026702624881640435,
+        "cum_returns": -0.027206574969482422,
+        "cash": 5112.46284912109,
+        "holdings": 92166.87965393066
+      },
+      {
+        "Date": "2023-11-01",
+        "total": 99006.41769836425,
+        "daily_returns": 0.017753771261954432,
+        "cum_returns": -0.009935823016357426,
+        "cash": 5112.46284912109,
+        "holdings": 93893.95484924316
+      },
+      {
+        "Date": "2023-11-02",
+        "total": 100949.40224121093,
+        "daily_returns": 0.019624834308885175,
+        "cum_returns": 0.009494022412109393,
+        "cash": 5112.46284912109,
+        "holdings": 95836.93939208984
+      },
+      {
+        "Date": "2023-11-03",
+        "total": 100452.85149047851,
+        "daily_returns": -0.0049188082317312976,
+        "cum_returns": 0.004528514904785119,
+        "cash": 5112.46284912109,
+        "holdings": 95340.38864135742
+      },
+      {
+        "Date": "2023-11-06",
+        "total": 101845.3224987793,
+        "daily_returns": 0.013861936098775285,
+        "cum_returns": 0.018453224987792893,
+        "cash": 5112.46284912109,
+        "holdings": 96732.8596496582
+      },
+      {
+        "Date": "2023-11-07",
+        "total": 103243.19061706543,
+        "daily_returns": 0.013725403229027933,
+        "cum_returns": 0.03243190617065417,
+        "cash": 5112.46284912109,
+        "holdings": 98130.72776794434
+      },
+      {
+        "Date": "2023-11-08",
+        "total": 103820.673069458,
+        "daily_returns": 0.005593419274831257,
+        "cum_returns": 0.038206730694579916,
+        "cash": 5112.46284912109,
+        "holdings": 98708.21022033691
+      },
+      {
+        "Date": "2023-11-09",
+        "total": 103561.61179016113,
+        "daily_returns": -0.0024952764380901105,
+        "cum_returns": 0.03561611790161123,
+        "cash": 5112.46284912109,
+        "holdings": 98449.14894104004
+      },
+      {
+        "Date": "2023-11-10",
+        "total": 105847.61635253906,
+        "daily_returns": 0.022073860408911683,
+        "cum_returns": 0.05847616352539031,
+        "cash": 5112.46284912109,
+        "holdings": 100735.15350341797
+      },
+      {
+        "Date": "2023-11-13",
+        "total": 104982.92282531738,
+        "daily_returns": -0.008169230040492415,
+        "cum_returns": 0.049829228253173596,
+        "cash": 5112.46284912109,
+        "holdings": 99870.45997619629
+      },
+      {
+        "Date": "2023-11-14",
+        "total": 106409.66423461914,
+        "daily_returns": 0.013590223732632634,
+        "cum_returns": 0.06409664234619128,
+        "cash": 5112.46284912109,
+        "holdings": 101297.20138549805
+      },
+      {
+        "Date": "2023-11-15",
+        "total": 106717.69035766601,
+        "daily_returns": 0.0028947194342021643,
+        "cum_returns": 0.06717690357666006,
+        "cash": 5112.46284912109,
+        "holdings": 101605.22750854492
+      },
+      {
+        "Date": "2023-11-16",
+        "total": 107636.41319702148,
+        "daily_returns": 0.008608908572480756,
+        "cum_returns": 0.07636413197021463,
+        "cash": 5112.46284912109,
+        "holdings": 102523.95034790039
+      },
+      {
+        "Date": "2023-11-17",
+        "total": 107625.6023449707,
+        "daily_returns": -0.00010043861300912393,
+        "cum_returns": 0.07625602344970672,
+        "cash": 5112.46284912109,
+        "holdings": 102513.13949584961
+      },
+      {
+        "Date": "2023-11-20",
+        "total": 108576.75774047851,
+        "daily_returns": 0.008837631332915485,
+        "cum_returns": 0.0857675774047848,
+        "cash": 5112.46284912109,
+        "holdings": 103464.29489135742
+      },
+      {
+        "Date": "2023-11-21",
+        "total": 108139.00139282226,
+        "daily_returns": -0.004031768462847141,
+        "cum_returns": 0.0813900139282222,
+        "cash": 5112.46284912109,
+        "holdings": 103026.53854370117
+      },
+      {
+        "Date": "2023-11-22",
+        "total": 108501.09009216308,
+        "daily_returns": 0.0033483636308559994,
+        "cum_returns": 0.08501090092163022,
+        "cash": 5112.46284912109,
+        "holdings": 103388.62724304199
+      },
+      {
+        "Date": "2023-11-24",
+        "total": 107776.92100952148,
+        "daily_returns": -0.006674302369003682,
+        "cum_returns": 0.07776921009521409,
+        "cash": 5112.46284912109,
+        "holdings": 102664.45816040039
+      },
+      {
+        "Date": "2023-11-27",
+        "total": 107679.63997314453,
+        "daily_returns": -0.0009026147292550135,
+        "cum_returns": 0.0767963997314447,
+        "cash": 5112.46284912109,
+        "holdings": 102567.17712402344
+      },
+      {
+        "Date": "2023-11-28",
+        "total": 108009.30443237304,
+        "daily_returns": 0.003061530102726362,
+        "cum_returns": 0.08009304432372999,
+        "cash": 5112.46284912109,
+        "holdings": 102896.84158325195
+      },
+      {
+        "Date": "2023-11-29",
+        "total": 107452.66197631836,
+        "daily_returns": -0.005153652817042387,
+        "cum_returns": 0.07452661976318309,
+        "cash": 5112.46284912109,
+        "holdings": 102340.19912719727
+      },
+      {
+        "Date": "2023-11-30",
+        "total": 107766.1101574707,
+        "daily_returns": 0.002917081581668368,
+        "cum_returns": 0.07766110157470663,
+        "cash": 5112.46284912109,
+        "holdings": 102653.64730834961
+      },
+      {
+        "Date": "2023-12-01",
+        "total": 108463.26874206543,
+        "daily_returns": 0.006469182042258215,
+        "cum_returns": 0.084632687420654,
+        "cash": 5112.46284912109,
+        "holdings": 103350.80589294434
+      },
+      {
+        "Date": "2023-12-04",
+        "total": 107485.07790039062,
+        "daily_returns": -0.009018636935984481,
+        "cum_returns": 0.07485077900390591,
+        "cash": 5112.46284912109,
+        "holdings": 102372.61505126953
+      },
+      {
+        "Date": "2023-12-05",
+        "total": 109641.39381835937,
+        "daily_returns": 0.02006153747189976,
+        "cum_returns": 0.09641393818359334,
+        "cash": 5112.46284912109,
+        "holdings": 104528.93096923828
+      },
+      {
+        "Date": "2023-12-06",
+        "total": 109046.91338012695,
+        "daily_returns": -0.005422043787743913,
+        "cum_returns": 0.09046913380126909,
+        "cash": 5112.46284912109,
+        "holdings": 103934.45053100586
+      },
+      {
+        "Date": "2023-12-07",
+        "total": 110100.7552380371,
+        "daily_returns": 0.009664114510390176,
+        "cum_returns": 0.10100755238037062,
+        "cash": 5112.46284912109,
+        "holdings": 104988.29238891602
+      },
+      {
+        "Date": "2023-12-08",
+        "total": 110878.9536328125,
+        "daily_returns": 0.007068056827520763,
+        "cum_returns": 0.1087895363281246,
+        "cash": 5112.46284912109,
+        "holdings": 105766.4907836914
+      },
+      {
+        "Date": "2023-12-11",
+        "total": 109511.68854187011,
+        "daily_returns": -0.012331150738220553,
+        "cum_returns": 0.09511688541870078,
+        "cash": 5112.46284912109,
+        "holdings": 104399.22569274902
+      },
+      {
+        "Date": "2023-12-12",
+        "total": 110338.54408691406,
+        "daily_returns": 0.007550386228660999,
+        "cum_returns": 0.10338544086914037,
+        "cash": 5112.46284912109,
+        "holdings": 105226.08123779297
+      },
+      {
+        "Date": "2023-12-13",
+        "total": 112094.91669128418,
+        "daily_returns": 0.01591803316696483,
+        "cum_returns": 0.12094916691284152,
+        "cash": 5112.46284912109,
+        "holdings": 106982.45384216309
+      },
+      {
+        "Date": "2023-12-14",
+        "total": 112175.97313354492,
+        "daily_returns": 0.0007231054239862367,
+        "cum_returns": 0.12175973133544904,
+        "cash": 5112.46284912109,
+        "holdings": 107063.51028442383
+      },
+      {
+        "Date": "2023-12-15",
+        "total": 111884.14665649414,
+        "daily_returns": -0.002601506088147465,
+        "cum_returns": 0.1188414665649411,
+        "cash": 5112.46284912109,
+        "holdings": 106771.68380737305
+      },
+      {
+        "Date": "2023-12-18",
+        "total": 110976.24298522949,
+        "daily_returns": -0.008114676640043395,
+        "cum_returns": 0.10976242985229478,
+        "cash": 5112.46284912109,
+        "holdings": 105863.7801361084
+      },
+      {
+        "Date": "2023-12-19",
+        "total": 111543.67966125488,
+        "daily_returns": 0.005113136476434077,
+        "cum_returns": 0.11543679661254869,
+        "cash": 5112.46284912109,
+        "holdings": 106431.21681213379
+      },
+      {
+        "Date": "2023-12-20",
+        "total": 110403.38425109863,
+        "daily_returns": -0.010222859902230153,
+        "cum_returns": 0.10403384251098613,
+        "cash": 5112.46284912109,
+        "holdings": 105290.92140197754
+      },
+      {
+        "Date": "2023-12-21",
+        "total": 110322.31117675781,
+        "daily_returns": -0.000734335046799206,
+        "cum_returns": 0.10322311176757792,
+        "cash": 5112.46284912109,
+        "holdings": 105209.84832763672
+      },
+      {
+        "Date": "2023-12-22",
+        "total": 109738.67485473632,
+        "daily_returns": -0.005290283676947172,
+        "cum_returns": 0.09738674854736296,
+        "cash": 5112.46284912109,
+        "holdings": 104626.21200561523
+      },
+      {
+        "Date": "2023-12-26",
+        "total": 109441.41800354003,
+        "daily_returns": -0.00270877019054383,
+        "cum_returns": 0.09441418003540014,
+        "cash": 5112.46284912109,
+        "holdings": 104328.95515441895
+      },
+      {
+        "Date": "2023-12-27",
+        "total": 109495.4639477539,
+        "daily_returns": 0.00049383446596174,
+        "cum_returns": 0.0949546394775389,
+        "cash": 5112.46284912109,
+        "holdings": 104383.00109863281
+      },
+      {
+        "Date": "2023-12-28",
+        "total": 109727.86400268554,
+        "daily_returns": 0.002122462854192042,
+        "cum_returns": 0.09727864002685527,
+        "cash": 5112.46284912109,
+        "holdings": 104615.40115356445
+      },
+      {
+        "Date": "2023-12-29",
+        "total": 109160.40237854003,
+        "daily_returns": -0.005171536230137663,
+        "cum_returns": 0.09160402378540011,
+        "cash": 5112.46284912109,
+        "holdings": 104047.93952941895
+      }
+    ],
+    "trades": [],
+    "saved_at": "2025-10-27T06:59:15.249587"
+  },
+  {
+    "id": "f3dfcf8d-f3cd-470b-9216-aa6db483449d",
+    "strategy_name": "New Thing",
+    "status": "completed",
+    "started_at": "2025-10-27T07:31:07.200956",
+    "completed_at": "2025-10-27T07:31:15.667605",
+    "duration": "0:00:08.466651",
+    "config": {
+      "strategy_name": "New Thing",
+      "start_date": "2023-01-01",
+      "end_date": "2023-12-31",
+      "initial_capital": 100000.0,
+      "commission": 0.001,
+      "slippage": 0.0005,
+      "data_source": "yahoo",
+      "ticker": "AAPL"
+    },
+    "metrics": {
+      "total_return": 0.09160402378540035,
+      "annualized_return": 0.0930002072812397,
+      "sharpe_ratio": 1.3500518519112217,
+      "sortino_ratio": 1.074539827725338,
+      "max_drawdown": -0.04814752803344731,
+      "winning_days": 0
+    },
+    "portfolio_data": [
+      {
+        "Date": "2023-01-03",
+        "total": 100000.0,
+        "daily_returns": NaN,
+        "cum_returns": NaN,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-01-04",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-01-05",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-01-06",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-01-09",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-01-10",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-01-11",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-01-12",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-01-13",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-01-17",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-01-18",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-01-19",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-01-20",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-01-23",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-01-24",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-01-25",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-01-26",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-01-27",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-01-30",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-01-31",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-02-01",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-02-02",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-02-03",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-02-06",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-02-07",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-02-08",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-02-09",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-02-10",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-02-13",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-02-14",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-02-15",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-02-16",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-02-17",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-02-21",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-02-22",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-02-23",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-02-24",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-02-27",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-02-28",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-03-01",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-03-02",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-03-03",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-03-06",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-03-07",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-03-08",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-03-09",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-03-10",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-03-13",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-03-14",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-03-15",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-03-16",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-03-17",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-03-20",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-03-21",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-03-22",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-03-23",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-03-24",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-03-27",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-03-28",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-03-29",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-03-30",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-03-31",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-04-03",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-04-04",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-04-05",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-04-06",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-04-10",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-04-11",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-04-12",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-04-13",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-04-14",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-04-17",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-04-18",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-04-19",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-04-20",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-04-21",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-04-24",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-04-25",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-04-26",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-04-27",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-04-28",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-05-01",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-05-02",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-05-03",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-05-04",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-05-05",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-05-08",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-05-09",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-05-10",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-05-11",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-05-12",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-05-15",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-05-16",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-05-17",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-05-18",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-05-19",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-05-22",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-05-23",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-05-24",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-05-25",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-05-26",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-05-30",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-05-31",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-06-01",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-06-02",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-06-05",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-06-06",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-06-07",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-06-08",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-06-09",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-06-12",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-06-13",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-06-14",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-06-15",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-06-16",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-06-20",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-06-21",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-06-22",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-06-23",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-06-26",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-06-27",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-06-28",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-06-29",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-06-30",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-07-03",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-07-05",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-07-06",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-07-07",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-07-10",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-07-11",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-07-12",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-07-13",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-07-14",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-07-17",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-07-18",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-07-19",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-07-20",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-07-21",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-07-24",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-07-25",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-07-26",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-07-27",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-07-28",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-07-31",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-08-01",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-08-02",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-08-03",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-08-04",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-08-07",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-08-08",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-08-09",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-08-10",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-08-11",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-08-14",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-08-15",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-08-16",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-08-17",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-08-18",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-08-21",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-08-22",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-08-23",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-08-24",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-08-25",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-08-28",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-08-29",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-08-30",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-08-31",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-09-01",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-09-05",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-09-06",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-09-07",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-09-08",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-09-11",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-09-12",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-09-13",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-09-14",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-09-15",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-09-18",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-09-19",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-09-20",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-09-21",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-09-22",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-09-25",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-09-26",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-09-27",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-09-28",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-09-29",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-10-02",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-10-03",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-10-04",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-10-05",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-10-06",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-10-09",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-10-10",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-10-11",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-10-12",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-10-13",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-10-16",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-10-17",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-10-18",
+        "total": 100000.0,
+        "daily_returns": 0.0,
+        "cum_returns": 0.0,
+        "cash": 100000.0,
+        "holdings": 0.0
+      },
+      {
+        "Date": "2023-10-19",
+        "total": 99810.60371826171,
+        "daily_returns": -0.0018939628173828549,
+        "cum_returns": -0.0018939628173828549,
+        "cash": 5112.46284912109,
+        "holdings": 94698.14086914062
+      },
+      {
+        "Date": "2023-10-20",
+        "total": 98418.14102600097,
+        "daily_returns": -0.01395104969198746,
+        "cum_returns": -0.015818589739990285,
+        "cash": 5112.46284912109,
+        "holdings": 93305.67817687988
+      },
+      {
+        "Date": "2023-10-23",
+        "total": 98482.90634582519,
+        "daily_returns": 0.0006580628240795416,
+        "cum_returns": -0.015170936541747948,
+        "cash": 5112.46284912109,
+        "holdings": 93370.4434967041
+      },
+      {
+        "Date": "2023-10-24",
+        "total": 98720.3875012207,
+        "daily_returns": 0.0024113946694626076,
+        "cum_returns": -0.012796124987792812,
+        "cash": 5112.46284912109,
+        "holdings": 93607.92465209961
+      },
+      {
+        "Date": "2023-10-25",
+        "total": 97457.44713256836,
+        "daily_returns": -0.012793105868194932,
+        "cum_returns": -0.025425528674316245,
+        "cash": 5112.46284912109,
+        "holdings": 92344.98428344727
+      },
+      {
+        "Date": "2023-10-26",
+        "total": 95185.24719665527,
+        "daily_returns": -0.023314790226572235,
+        "cum_returns": -0.04814752803344713,
+        "cash": 5112.46284912109,
+        "holdings": 90072.78434753418
+      },
+      {
+        "Date": "2023-10-27",
+        "total": 95903.07114074707,
+        "daily_returns": 0.0075413361338312335,
+        "cum_returns": -0.04096928859252913,
+        "cash": 5112.46284912109,
+        "holdings": 90790.60829162598
+      },
+      {
+        "Date": "2023-10-30",
+        "total": 97020.28953979492,
+        "daily_returns": 0.011649453826230616,
+        "cum_returns": -0.02979710460205065,
+        "cash": 5112.46284912109,
+        "holdings": 91907.82669067383
+      },
+      {
+        "Date": "2023-10-31",
+        "total": 97279.34250305175,
+        "daily_returns": 0.002670090601518682,
+        "cum_returns": -0.027206574969482422,
+        "cash": 5112.46284912109,
+        "holdings": 92166.87965393066
+      },
+      {
+        "Date": "2023-11-01",
+        "total": 99006.43433044433,
+        "daily_returns": 0.017753942234327802,
+        "cum_returns": -0.009935656695556738,
+        "cash": 5112.46284912109,
+        "holdings": 93893.97148132324
+      },
+      {
+        "Date": "2023-11-02",
+        "total": 100949.40224121093,
+        "daily_returns": 0.019624663022220767,
+        "cum_returns": 0.009494022412109171,
+        "cash": 5112.46284912109,
+        "holdings": 95836.93939208984
+      },
+      {
+        "Date": "2023-11-03",
+        "total": 100452.85980651855,
+        "daily_returns": -0.0049187258534323375,
+        "cum_returns": 0.004528598065185241,
+        "cash": 5112.46284912109,
+        "holdings": 95340.39695739746
+      },
+      {
+        "Date": "2023-11-06",
+        "total": 101845.3224987793,
+        "daily_returns": 0.013861852165709898,
+        "cum_returns": 0.01845322498779267,
+        "cash": 5112.46284912109,
+        "holdings": 96732.8596496582
+      },
+      {
+        "Date": "2023-11-07",
+        "total": 103243.18230102539,
+        "daily_returns": 0.013725321575400296,
+        "cum_returns": 0.0324318230102536,
+        "cash": 5112.46284912109,
+        "holdings": 98130.7194519043
+      },
+      {
+        "Date": "2023-11-08",
+        "total": 103820.673069458,
+        "daily_returns": 0.005593500273449736,
+        "cum_returns": 0.038206730694579694,
+        "cash": 5112.46284912109,
+        "holdings": 98708.21022033691
+      },
+      {
+        "Date": "2023-11-09",
+        "total": 103561.61179016113,
+        "daily_returns": -0.0024952764380901105,
+        "cum_returns": 0.03561611790161101,
+        "cash": 5112.46284912109,
+        "holdings": 98449.14894104004
+      },
+      {
+        "Date": "2023-11-10",
+        "total": 105847.61635253906,
+        "daily_returns": 0.022073860408911683,
+        "cum_returns": 0.05847616352539009,
+        "cash": 5112.46284912109,
+        "holdings": 100735.15350341797
+      },
+      {
+        "Date": "2023-11-13",
+        "total": 104982.92282531738,
+        "daily_returns": -0.008169230040492415,
+        "cum_returns": 0.049829228253173374,
+        "cash": 5112.46284912109,
+        "holdings": 99870.45997619629
+      },
+      {
+        "Date": "2023-11-14",
+        "total": 106409.64760253906,
+        "daily_returns": 0.013590065306103405,
+        "cum_returns": 0.06409647602539015,
+        "cash": 5112.46284912109,
+        "holdings": 101297.18475341797
+      },
+      {
+        "Date": "2023-11-15",
+        "total": 106717.68204162597,
+        "daily_returns": 0.002894798037838431,
+        "cum_returns": 0.06717682041625928,
+        "cash": 5112.46284912109,
+        "holdings": 101605.21919250488
+      },
+      {
+        "Date": "2023-11-16",
+        "total": 107636.41319702148,
+        "daily_returns": 0.008608987168941207,
+        "cum_returns": 0.07636413197021441,
+        "cash": 5112.46284912109,
+        "holdings": 102523.95034790039
+      },
+      {
+        "Date": "2023-11-17",
+        "total": 107625.6023449707,
+        "daily_returns": -0.00010043861300912393,
+        "cum_returns": 0.0762560234497065,
+        "cash": 5112.46284912109,
+        "holdings": 102513.13949584961
+      },
+      {
+        "Date": "2023-11-20",
+        "total": 108576.74942443847,
+        "daily_returns": 0.008837554064683228,
+        "cum_returns": 0.08576749424438423,
+        "cash": 5112.46284912109,
+        "holdings": 103464.28657531738
+      },
+      {
+        "Date": "2023-11-21",
+        "total": 108139.01802490234,
+        "daily_returns": -0.004031538997589568,
+        "cum_returns": 0.08139018024902289,
+        "cash": 5112.46284912109,
+        "holdings": 103026.55517578125
+      },
+      {
+        "Date": "2023-11-22",
+        "total": 108501.09009216308,
+        "daily_returns": 0.0033482093131025348,
+        "cum_returns": 0.08501090092163022,
+        "cash": 5112.46284912109,
+        "holdings": 103388.62724304199
+      },
+      {
+        "Date": "2023-11-24",
+        "total": 107776.92100952148,
+        "daily_returns": -0.006674302369003682,
+        "cum_returns": 0.07776921009521409,
+        "cash": 5112.46284912109,
+        "holdings": 102664.45816040039
+      },
+      {
+        "Date": "2023-11-27",
+        "total": 107679.63997314453,
+        "daily_returns": -0.0009026147292550135,
+        "cum_returns": 0.0767963997314447,
+        "cash": 5112.46284912109,
+        "holdings": 102567.17712402344
+      },
+      {
+        "Date": "2023-11-28",
+        "total": 108009.30443237304,
+        "daily_returns": 0.003061530102726362,
+        "cum_returns": 0.08009304432372999,
+        "cash": 5112.46284912109,
+        "holdings": 102896.84158325195
+      },
+      {
+        "Date": "2023-11-29",
+        "total": 107452.65366027832,
+        "daily_returns": -0.0051537298107798835,
+        "cum_returns": 0.07452653660278274,
+        "cash": 5112.46284912109,
+        "holdings": 102340.19081115723
+      },
+      {
+        "Date": "2023-11-30",
+        "total": 107766.1101574707,
+        "daily_returns": 0.0029171592000267754,
+        "cum_returns": 0.0776611015747064,
+        "cash": 5112.46284912109,
+        "holdings": 102653.64730834961
+      },
+      {
+        "Date": "2023-12-01",
+        "total": 108463.26874206543,
+        "daily_returns": 0.006469182042258215,
+        "cum_returns": 0.08463268742065377,
+        "cash": 5112.46284912109,
+        "holdings": 103350.80589294434
+      },
+      {
+        "Date": "2023-12-04",
+        "total": 107485.0945324707,
+        "daily_returns": -0.009018483593011606,
+        "cum_returns": 0.0748509453247066,
+        "cash": 5112.46284912109,
+        "holdings": 102372.63168334961
+      },
+      {
+        "Date": "2023-12-05",
+        "total": 109641.39381835937,
+        "daily_returns": 0.020061379629128684,
+        "cum_returns": 0.09641393818359334,
+        "cash": 5112.46284912109,
+        "holdings": 104528.93096923828
+      },
+      {
+        "Date": "2023-12-06",
+        "total": 109046.93001220703,
+        "daily_returns": -0.0054218920924808955,
+        "cum_returns": 0.09046930012206977,
+        "cash": 5112.46284912109,
+        "holdings": 103934.46716308594
+      },
+      {
+        "Date": "2023-12-07",
+        "total": 110100.74692199707,
+        "daily_returns": 0.00966388425306497,
+        "cum_returns": 0.10100746921997028,
+        "cash": 5112.46284912109,
+        "holdings": 104988.28407287598
+      },
+      {
+        "Date": "2023-12-08",
+        "total": 110878.9536328125,
+        "daily_returns": 0.007068132892565693,
+        "cum_returns": 0.10878953632812438,
+        "cash": 5112.46284912109,
+        "holdings": 105766.4907836914
+      },
+      {
+        "Date": "2023-12-11",
+        "total": 109511.68022583007,
+        "daily_returns": -0.012331225739289464,
+        "cum_returns": 0.09511680225830021,
+        "cash": 5112.46284912109,
+        "holdings": 104399.21737670898
+      },
+      {
+        "Date": "2023-12-12",
+        "total": 110338.52745483398,
+        "daily_returns": 0.007550310864547161,
+        "cum_returns": 0.10338527454833923,
+        "cash": 5112.46284912109,
+        "holdings": 105226.06460571289
+      },
+      {
+        "Date": "2023-12-13",
+        "total": 112094.90837524414,
+        "daily_returns": 0.015918110934814766,
+        "cum_returns": 0.12094908375244073,
+        "cash": 5112.46284912109,
+        "holdings": 106982.44552612305
+      },
+      {
+        "Date": "2023-12-14",
+        "total": 112175.98144958496,
+        "daily_returns": 0.0007232538526140697,
+        "cum_returns": 0.12175981449584894,
+        "cash": 5112.46284912109,
+        "holdings": 107063.51860046387
+      },
+      {
+        "Date": "2023-12-15",
+        "total": 111884.14665649414,
+        "daily_returns": -0.0026015800291614433,
+        "cum_returns": 0.11884146656494066,
+        "cash": 5112.46284912109,
+        "holdings": 106771.68380737305
+      },
+      {
+        "Date": "2023-12-18",
+        "total": 110976.24298522949,
+        "daily_returns": -0.008114676640043395,
+        "cum_returns": 0.10976242985229434,
+        "cash": 5112.46284912109,
+        "holdings": 105863.7801361084
+      },
+      {
+        "Date": "2023-12-19",
+        "total": 111543.67134521484,
+        "daily_returns": 0.005113061541116348,
+        "cum_returns": 0.1154367134521479,
+        "cash": 5112.46284912109,
+        "holdings": 106431.20849609375
+      },
+      {
+        "Date": "2023-12-20",
+        "total": 110403.38425109863,
+        "daily_returns": -0.0102227861102685,
+        "cum_returns": 0.10403384251098569,
+        "cash": 5112.46284912109,
+        "holdings": 105290.92140197754
+      },
+      {
+        "Date": "2023-12-21",
+        "total": 110322.31949279785,
+        "daily_returns": -0.0007342597226586145,
+        "cum_returns": 0.10322319492797782,
+        "cash": 5112.46284912109,
+        "holdings": 105209.85664367676
+      },
+      {
+        "Date": "2023-12-22",
+        "total": 109738.66653869628,
+        "daily_returns": -0.005290434037145686,
+        "cum_returns": 0.09738666538696217,
+        "cash": 5112.46284912109,
+        "holdings": 104626.2036895752
+      },
+      {
+        "Date": "2023-12-26",
+        "total": 109441.42631958007,
+        "daily_returns": -0.002708618835015608,
+        "cum_returns": 0.09441426319580004,
+        "cash": 5112.46284912109,
+        "holdings": 104328.96347045898
+      },
+      {
+        "Date": "2023-12-27",
+        "total": 109495.45563171386,
+        "daily_returns": 0.0004936824560017872,
+        "cum_returns": 0.0949545563171379,
+        "cash": 5112.46284912109,
+        "holdings": 104382.99278259277
+      },
+      {
+        "Date": "2023-12-28",
+        "total": 109727.8556866455,
+        "daily_returns": 0.00212246301539043,
+        "cum_returns": 0.09727855686645426,
+        "cash": 5112.46284912109,
+        "holdings": 104615.39283752441
+      },
+      {
+        "Date": "2023-12-29",
+        "total": 109160.40237854003,
+        "daily_returns": -0.005171460834211272,
+        "cum_returns": 0.09160402378539945,
+        "cash": 5112.46284912109,
+        "holdings": 104047.93952941895
+      }
+    ],
+    "trades": [],
+    "saved_at": "2025-10-27T07:31:15.668352"
+  }
+]
