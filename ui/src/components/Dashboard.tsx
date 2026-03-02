@@ -3,7 +3,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from ".
 import { Badge } from "./ui/badge";
 import { useState, useEffect } from "react";
 import { TrendingUp, BarChart3, Activity, Award, ArrowUpRight, ArrowDownRight } from "lucide-react";
-import { apiClient } from "@/lib/api";
+import { apiClient } from "../lib/api";
 
 export function Dashboard() {
   const [kpis, setKpis] = useState([

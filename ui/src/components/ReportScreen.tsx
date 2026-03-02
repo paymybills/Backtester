@@ -4,7 +4,7 @@ import { Badge } from "./ui/badge";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "./ui/select";
 import { XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, BarChart, Bar, Area, AreaChart } from "recharts";
 import { useState, useEffect } from "react";
-import { apiClient } from "@/lib/api";
+import { apiClient } from "../lib/api";
 import { TrendingUp, TrendingDown, Target, Percent, Layers } from "lucide-react";
 
 export function ReportScreen() {

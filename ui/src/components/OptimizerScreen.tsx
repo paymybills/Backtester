@@ -7,7 +7,7 @@ import { Progress } from "./ui/progress";
 import { Badge } from "./ui/badge";
 import { Play, Sparkles, AlertCircle } from "lucide-react";
 import { useState, useEffect, useMemo } from "react";
-import { apiClient } from "@/lib/api";
+import { apiClient } from "../lib/api";
 import { useToast } from "./ui/use-toast";
 
 const STRATEGY_OPTS = {

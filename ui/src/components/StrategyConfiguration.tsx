@@ -8,7 +8,7 @@ import { Badge } from "./ui/badge";
 import { Slider } from "./ui/slider";
 import { useState, useEffect } from "react";
 import { useToast } from "./ui/use-toast";
-import { apiClient } from "@/lib/api";
+import { apiClient } from "../lib/api";
 import { TrendingUp, Activity, BarChart3, Layers, Sparkles, Save, CheckCircle } from "lucide-react";
 
 interface StrategyFormData {
