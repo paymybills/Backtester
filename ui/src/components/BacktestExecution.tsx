@@ -7,7 +7,7 @@ import { Progress } from "./ui/progress";
 import { Badge } from "./ui/badge";
 import { Play, Pause, Square } from "lucide-react";
 import { useState, useEffect } from "react";
-import { apiClient } from "@/lib/api";
+import { apiClient } from "../lib/api";
 import { useToast } from "./ui/use-toast";
 
 export function BacktestExecution() {
@@ -22,7 +22,7 @@ export function BacktestExecution() {
   const [dataSource, setDataSource] = useState("synthetic");
   const [ticker, setTicker] = useState("AAPL");
   const [timeframe, setTimeframe] = useState("1d");  // NEW: Add timeframe state
-  
+
   const [isRunning, setIsRunning] = useState(false);
   const [backtestId, setBacktestId] = useState<string | null>(null);
   const [progress, setProgress] = useState(0);
@@ -131,7 +131,7 @@ export function BacktestExecution() {
 
   const handlePause = async () => {
     if (!backtestId) return;
-    
+
     try {
       await apiClient.pauseBacktest(backtestId);
       setIsRunning(false);
@@ -207,8 +207,8 @@ export function BacktestExecution() {
               <div className="grid grid-cols-2 gap-4">
                 <div className="space-y-2">
                   <Label>Start Date</Label>
-                  <Input 
-                    type="date" 
+                  <Input
+                    type="date"
                     value={startDate}
                     onChange={(e) => setStartDate(e.target.value)}
                     className="w-full"
@@ -217,8 +217,8 @@ export function BacktestExecution() {
 
                 <div className="space-y-2">
                   <Label>End Date</Label>
-                  <Input 
-                    type="date" 
+                  <Input
+                    type="date"
                     value={endDate}
                     onChange={(e) => setEndDate(e.target.value)}
                     className="w-full"
@@ -228,9 +228,9 @@ export function BacktestExecution() {
 
               <div className="space-y-2">
                 <Label htmlFor="initial-capital">Initial Capital ($)</Label>
-                <Input 
-                  id="initial-capital" 
-                  type="number" 
+                <Input
+                  id="initial-capital"
+                  type="number"
                   value={initialCapital}
                   onChange={(e) => setInitialCapital(parseFloat(e.target.value) || 100000)}
                 />
@@ -238,10 +238,10 @@ export function BacktestExecution() {
 
               <div className="space-y-2">
                 <Label htmlFor="commission">Commission (%)</Label>
-                <Input 
-                  id="commission" 
-                  type="number" 
-                  step="0.001" 
+                <Input
+                  id="commission"
+                  type="number"
+                  step="0.001"
                   value={commission}
                   onChange={(e) => setCommission(parseFloat(e.target.value) || 0.001)}
                 />
@@ -249,10 +249,10 @@ export function BacktestExecution() {
 
               <div className="space-y-2">
                 <Label htmlFor="slippage">Slippage (%)</Label>
-                <Input 
-                  id="slippage" 
-                  type="number" 
-                  step="0.0001" 
+                <Input
+                  id="slippage"
+                  type="number"
+                  step="0.0001"
                   value={slippage}
                   onChange={(e) => setSlippage(parseFloat(e.target.value) || 0.0005)}
                 />
@@ -277,9 +277,9 @@ export function BacktestExecution() {
                 <>
                   <div className="space-y-2">
                     <Label htmlFor="ticker">Stock Ticker</Label>
-                    <Input 
-                      id="ticker" 
-                      type="text" 
+                    <Input
+                      id="ticker"
+                      type="text"
                       placeholder="AAPL, TSLA, MSFT, etc."
                       value={ticker}
                       onChange={(e) => setTicker(e.target.value.toUpperCase())}
@@ -322,24 +322,24 @@ export function BacktestExecution() {
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="flex space-x-2">
-                <Button 
-                  onClick={handleStart} 
+                <Button
+                  onClick={handleStart}
                   disabled={isRunning}
                   className="flex-1 bg-primary hover:bg-primary/90 text-primary-foreground"
                 >
                   <Play className="mr-2 h-4 w-4" />
                   Start
                 </Button>
-                <Button 
-                  variant="outline" 
+                <Button
+                  variant="outline"
                   onClick={handlePause}
                   disabled={!isRunning}
                   className="border-border hover:bg-muted"
                 >
                   <Pause className="h-4 w-4" />
                 </Button>
-                <Button 
-                  variant="outline" 
+                <Button
+                  variant="outline"
                   onClick={handleStop}
                   className="border-destructive/30 text-destructive hover:bg-destructive/10"
                 >
